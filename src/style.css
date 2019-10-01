@@ -228,7 +228,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   padding: 10px 20px;
 }
 .section-2-title{
-  font-size: 30px;
+  font-size: 19px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -238,7 +238,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   
 }
 .section-2-subtitle{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold; 
   font-style: normal;  
   font-stretch: normal;  
@@ -252,9 +252,9 @@ p{
 .section-3{
   position: relative;
   top: 361px;
-  height: 1000px;
-  background-image: linear-gradient(to bottom, #1276ff, #18b9ea);
-  opacity: 0.25;
+  height: 800px;
+  background-image: linear-gradient(to bottom, #CADAFD, #c4edfa);
+  opacity:1;
   text-align: center;
   padding: 10px 20px;
 }
@@ -296,4 +296,56 @@ footer{
   width:100%;
   height:100%;
   top:0px;
+}
+@media only screen and (min-width:500px){
+  .section-3{
+    height: 500px;
+  }
+
+  @media only screen and (min-width:600px){
+    .title-text h1 {
+      font-size: 30px;
+      margin-left:50px;
+    }
+    .title-para {
+      text-align: left;
+      margin-left:50px;
+    }
+    .line-svg {
+      height: 208px;
+      padding: 0px 20px;
+  }
+  .section-3{
+    height: 450px;
+  }
+    @media only screen and (min-width:750px){
+      .section-title-1 {
+        height: 450px;
+      }
+      .title-1-btn{
+        flex-direction: row;
+        padding-left: 100px;
+      }
+      .title-1-btn button{
+        width: 30%;
+        margin:10px 10px; 
+      }
+      .section-2-text {
+        top: 125px;
+        padding: 10px 50px;
+    }
+    .section-2-subtitle {
+      line-height: 3.21;
+    }
+    .title-3-text{
+      padding-top: 30px;
+    }
+    .title-3-text .para{
+      padding-top: 30px;
+    }
+    .section-3{
+      height: 400px;
+    }
+  }
+  }
 }
