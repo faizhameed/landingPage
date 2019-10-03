@@ -596,6 +596,26 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+  .line-svg {
+    padding: 0px 200px;
+    height: 277px;
+  }
+  .section-title-1 {
+    padding-left: 160px;
+  }
+  .section-title-1 .title-text h1 {
+    font-size: 50px;
+  }
+  .section-title-1 .title-para {
+    font-size: 20px;
+    margin: 0px 55px;
+    top: 5px;
+  }
+  .section-title-1 .title-1-btn button {
+    width: 20%;
+    margin: 0px 10px;
+    margin-top: 0;
+  }
   .section-2-text-image {
     padding-bottom: 0px;
   }
@@ -609,6 +629,53 @@ footer {
     width: 64%;
     top: 0px;
     left: 100px;
+    padding: 10px 0 0 0;
+  }
+  .section-3 {
+    height: 550px;
+    padding-bottom: 0px;
+  }
+  .section-3 .title-3-text {
+    width: 480px;
+    position: relative;
+    right: 10%;
+  }
+  .section-3 .svg-ipad {
+    margin: 0;
+    width: 64%;
+    top: 0px;
+    right: 100px;
+    padding: 10px 0 0 0;
+  }
+  .section-4 {
+    padding-bottom: 0px;
+  }
+  .section-4 .title-4-text {
+    width: 480px;
+    position: relative;
+    left: 10%;
+  }
+  .section-4 .svg-ipad {
+    margin: 0;
+    width: 64%;
+    top: 0px;
+    left: 100px;
+    padding: 10px 0 0 0;
+  }
+  .section-5 {
+    height: 850px;
+    padding-bottom: 0px;
+  }
+  .section-5 .title-5-text {
+    width: 480px;
+    position: relative;
+    right: 10%;
+  }
+  .section-5 .svg-ipad {
+    margin: 0;
+    width: 64%;
+    top: 0px;
+    right: 100px;
     padding: 10px 0 0 0;
   }
 }
