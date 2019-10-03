@@ -14,6 +14,11 @@ header {
   width: 100%;
 }
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(./fonts/HelveticaNeueLt.ttf) format("truetype");
+}
+
 .navbar {
   background-color: #000000;
 }
@@ -219,7 +224,7 @@ body {
   text-align: center;
   margin: 10px 20px;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
   position: relative;
   top: 30px;
 }
@@ -286,6 +291,10 @@ body {
   padding-top: 50px;
 }
 
+.section-2-title .text-underline {
+  border-bottom: 3px solid red;
+}
+
 .section-2-subtitle {
   font-size: 24px;
   font-weight: bold;
@@ -303,7 +312,7 @@ body {
 }
 
 p {
-  font-family: 'lato', sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
 }
 
 .section-3 {
@@ -373,11 +382,14 @@ p {
   left: 52px;
 }
 
-footer {
-  position: relative;
-  height: 392px;
-  top: 50px;
-  background-color: #000000;
+.section-6-cards {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
+  background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+}
+
+.section-6-cards div {
+  border-radius: 5px 20px 5px;
+  width: 50%;
 }
 
 #canvas {
@@ -385,6 +397,32 @@ footer {
   width: 100%;
   height: 100%;
   top: 0px;
+}
+
+footer {
+  position: relative;
+  height: 600px;
+  top: 50px;
+  background-color: #000000;
+  color: #f4f4f4;
+  padding: 20px 0;
+}
+
+footer > div {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+footer > div h1 {
+  font-size: 16px;
+}
+
+footer > div li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 2;
 }
 
 @media only screen and (min-width: 500px) {
@@ -466,6 +504,25 @@ footer {
   .section-5 {
     height: 1920px;
   }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 210px;
+  }
+  footer .footer-menu-3 {
+    position: relative;
+    bottom: 27px;
+  }
+  footer > div {
+    margin: auto 0;
+    text-align: left;
+  }
+  footer > div h1 {
+    padding-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) {
@@ -487,6 +544,9 @@ footer {
   }
   .title-para {
     width: 750px;
+  }
+  .section-2-title {
+    font-size: 30px;
   }
   .section-2-text-image {
     padding: 10px 50px;
@@ -559,6 +619,47 @@ footer {
     width: 521px;
     padding-top: 0;
   }
+  .section-6-cards {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
+    background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1200px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-6-cards div {
+    margin: auto 2.5%;
+    height: 375px;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    width: 25%;
+    text-align: left;
+    padding: 10px 20px 0px;
+  }
+  .section-6-cards div img {
+    width: 84.8px;
+    height: 84.8px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 10px;
+  }
+  .section-6-cards div h1 {
+    font-size: 18px;
+    color: #006cff;
+  }
+  .section-6-cards div p {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) {
@@ -593,9 +694,18 @@ footer {
     position: relative;
     bottom: 10px;
   }
+  .section-6-cards div {
+    width: 23%;
+  }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) {
+  .section-6-cards div {
+    width: 21%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) {
   .line-svg {
     padding: 0px 200px;
     height: 277px;
@@ -677,6 +787,9 @@ footer {
     top: 0px;
     right: 100px;
     padding: 10px 0 0 0;
+  }
+  .section-6-cards div {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */

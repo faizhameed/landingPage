@@ -9,6 +9,10 @@ header{
   z-index:2;
   width: 100%;
 }
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(./fonts/HelveticaNeueLt.ttf) format("truetype");
+}
 .navbar {
   background-color: #000000;
 }
@@ -187,7 +191,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   text-align: center;
   margin: 10px 20px;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
   position: relative;
   top: 30px;
 }
@@ -238,6 +242,9 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   color: #484848;
   text-align: center;
   padding-top: 50px;
+  .text-underline{
+    border-bottom:3px solid red;
+  }
 }
 .section-2-subtitle{
   font-size: 24px;
@@ -255,7 +262,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
 
 }
 p{
-  font-family: 'lato', sans-serif;
+  font-family: "HelveticaNeue", sans-serif;
 }
 .section-3{
   height: 1130px;
@@ -314,17 +321,43 @@ p{
   position: relative;
     left: 52px;
 }
-footer{
-  position: relative;
-  height: 392px;
-  top: 50px;
-  background-color: #000000;
+.section-6-cards{
+  background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+  & div{
+    border-radius: 5px 20px 5px;
+    width:50%;
+  }
 }
 #canvas{
   position:absolute;
   width:100%;
   height:100%;
   top:0px;
+}
+
+footer{
+  position: relative;
+  height: 600px;
+  top: 50px;
+  background-color: #000000;
+  color: #f4f4f4;
+  padding:20px 0;
+  &>div{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    h1{
+      font-size: 16px;
+    }
+    li{
+      list-style-type: none;
+      font-size: 14px;
+      line-height: 2;
+    }
+    
+  }
+  
 }
 @media only screen and (min-width:500px){
   .section-3{
@@ -402,6 +435,22 @@ footer{
     .section-5 {
       height: 1920px;
   }
+  footer{
+    display: flex;
+    justify-content: space-around;
+    height: 210px;
+    .footer-menu-3{
+      position: relative;
+    bottom: 27px;
+    }
+    & > div{
+      margin: auto 0;
+      text-align: left;
+      h1{
+        padding-bottom: 20px;
+      }
+    }
+  }
     @media only screen and (min-width:992px) {
                     .nav-signin-up{
                         position: absolute;
@@ -422,6 +471,9 @@ footer{
                     }
                     .title-para {
                     width: 750px;
+                }
+                .section-2-title{
+                  font-size: 30px;
                 }
 
                 .section-2-text-image{
@@ -481,7 +533,37 @@ footer{
                         width: 521px;
                         padding-top: 0;
                     }
-
+                }
+                .section-6-cards{
+                  background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+                  display: flex;
+                  height: 1200px;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  justify-content: center;
+                  & div{
+                    margin: auto 2.5%;
+                    height: 375px;
+                    background-color: white;
+                    border-radius: 25px;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                    width:25%;
+                    text-align: left;
+                    padding: 10px 20px 0px;
+                    img{
+                      width: 84.8px;
+                      height: 84.8px;
+                      object-fit: contain;
+                      padding:10px;
+                    }
+                    h1{
+                      font-size: 18px;
+                      color: #006cff;
+                    }
+                    p{
+                      font-size: 14px;
+                    }
+                  }
                 }
                 @media only screen and (min-width:1200px){
                     .line-svg {
@@ -520,92 +602,109 @@ footer{
                         bottom: 10px;
                     }
                 }
-
-                @media only screen and (min-width:1400px){
-                  .line-svg {
-                    padding: 0px 200px;
-                    height: 277px;
-                }
-                  .section-title-1{
-                    padding-left: 160px;
-                    .title-text h1 {
-                      font-size: 50px;
-                    }
-                        .title-para{
-                          font-size: 20px;
-                          margin: 0px 55px;
-                          top: 5px;
-                        }
-                        .title-1-btn button {
-                          width: 20%;
-                          margin: 0px 10px;
-                          margin-top: 0;
-                      }
+                .section-6-cards{
+                  & div{
+                    width:23%;
                   }
-                    .section-2-text-image{
+                }
+                @media only screen and (min-width:1300px){
+                  .section-6-cards{
+                    & div{
+                      width:21%;
+                    }
+                  }
+
+                  @media only screen and (min-width:1400px){
+                    .line-svg {
+                      padding: 0px 200px;
+                      height: 277px;
+                  }
+                    .section-title-1{
+                      padding-left: 160px;
+                      .title-text h1 {
+                        font-size: 50px;
+                      }
+                          .title-para{
+                            font-size: 20px;
+                            margin: 0px 55px;
+                            top: 5px;
+                          }
+                          .title-1-btn button {
+                            width: 20%;
+                            margin: 0px 10px;
+                            margin-top: 0;
+                        }
+                    }
+                      .section-2-text-image{
+                          padding-bottom:0px;
+                          .section-2-text{
+                              width: 480px;
+                              position: relative;
+                              left: 10%;
+                          }
+                          .svg-ipad{
+                              margin: 0;
+                              width: 64%;
+                              top: 0px;
+                              left: 100px;
+                              padding: 10px 0 0 0;
+                          }
+                      }
+                      .section-3{
+                        height: 550px;
                         padding-bottom:0px;
-                        .section-2-text{
-                            width: 480px;
-                            position: relative;
-                            left: 10%;
+                        .title-3-text{
+                          width: 480px;
+                          position: relative;
+                          right: 10%;
                         }
                         .svg-ipad{
-                            margin: 0;
-                            width: 64%;
-                            top: 0px;
-                            left: 100px;
-                            padding: 10px 0 0 0;
+                              margin: 0;
+                              width: 64%;
+                              top: 0px;
+                              right: 100px;
+                              padding: 10px 0 0 0;
                         }
+                      }
+                      .section-4{
+                        padding-bottom:0px;
+                        .title-4-text{
+                          width: 480px;
+                          position: relative;
+                          left: 10%;
+                        }
+                        .svg-ipad{
+                          margin: 0;
+                          width: 64%;
+                          top: 0px;
+                          left: 100px;
+                          padding: 10px 0 0 0;
+                        }
+                      }
+                      .section-5{
+                        height: 850px;
+                        padding-bottom:0px;
+                        .title-5-text{
+                          width: 480px;
+                          position: relative;
+                          right: 10%;
+                        }
+                        .svg-ipad{
+                              margin: 0;
+                              width: 64%;
+                              top: 0px;
+                              right: 100px;
+                              padding: 10px 0 0 0;
+                        }
+                      }
+                      .section-6-cards{
+                        & div{
+                          width:270px;
+                        }
+                      }
+  
                     }
-                    .section-3{
-                      height: 550px;
-                      padding-bottom:0px;
-                      .title-3-text{
-                        width: 480px;
-                        position: relative;
-                        right: 10%;
-                      }
-                      .svg-ipad{
-                            margin: 0;
-                            width: 64%;
-                            top: 0px;
-                            right: 100px;
-                            padding: 10px 0 0 0;
-                      }
-                    }
-                    .section-4{
-                      padding-bottom:0px;
-                      .title-4-text{
-                        width: 480px;
-                        position: relative;
-                        left: 10%;
-                      }
-                      .svg-ipad{
-                        margin: 0;
-                        width: 64%;
-                        top: 0px;
-                        left: 100px;
-                        padding: 10px 0 0 0;
-                      }
-                    }
-                    .section-5{
-                      height: 850px;
-                      padding-bottom:0px;
-                      .title-5-text{
-                        width: 480px;
-                        position: relative;
-                        right: 10%;
-                      }
-                      .svg-ipad{
-                            margin: 0;
-                            width: 64%;
-                            top: 0px;
-                            right: 100px;
-                            padding: 10px 0 0 0;
-                      }
-                    }
-
-                  }
+                }
                 }
             }
         }
