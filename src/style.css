@@ -167,6 +167,11 @@ body {
   color: black;
 }
 
+#sliding-title {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .corefactors-logo {
   width: auto;
   height: 30px;
@@ -502,7 +507,52 @@ footer > div li {
     height: 1000px;
   }
   .section-5 {
-    height: 1920px;
+    height: 1120px;
+  }
+  .section-6-cards {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
+    background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 900px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .section-6-cards div {
+    margin: auto 2.5%;
+    height: 375px;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    width: 25%;
+    text-align: left;
+    padding: 10px 20px 0px;
+  }
+  .section-6-cards div img {
+    width: 84.8px;
+    height: 84.8px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 10px;
+  }
+  .section-6-cards div h1 {
+    font-size: 15px;
+    color: #006cff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .section-6-cards div p {
+    font-size: 1.6vw;
+    text-align: justify;
   }
   footer {
     display: -webkit-box;
@@ -625,7 +675,7 @@ footer > div li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 1200px;
+    height: 1000px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -767,8 +817,8 @@ footer > div li {
   }
   .section-4 .svg-ipad {
     margin: 0;
-    width: 64%;
-    top: 0px;
+    width: 58%;
+    top: -130px;
     left: 100px;
     padding: 10px 0 0 0;
   }
@@ -788,8 +838,17 @@ footer > div li {
     right: 100px;
     padding: 10px 0 0 0;
   }
+  .section-6-cards {
+    padding: 5% 10%;
+  }
   .section-6-cards div {
     width: 270px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) and (min-width: 1650px) {
+  .section-6-cards {
+    padding: 5% 17%;
   }
 }
 /*# sourceMappingURL=style.css.map */

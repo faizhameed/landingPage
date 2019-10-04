@@ -1,11 +1,11 @@
-var canvas =document.getElementById('canvas');
+/* var canvas =document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var ctx = canvas.getContext('2d');
 let dpi = window.devicePixelRatio;
 function fix_dpi() {
-    //create a style object that returns width and height
+   
       let style = {
         height() {
           return +getComputedStyle(canvas).getPropertyValue('height').slice(0,-2);
@@ -14,7 +14,6 @@ function fix_dpi() {
           return +getComputedStyle(canvas).getPropertyValue('width').slice(0,-2);
         }
       }
-    //set the correct attributes for a crystal clear image!
       canvas.setAttribute('width', style.width() * dpi);
       canvas.setAttribute('height', style.height() * dpi);
     }
@@ -35,4 +34,20 @@ function fix_dpi() {
     
   
     ctx.strokeStyle ='#006cff';
-    ctx.stroke();
+    ctx.stroke(); */
+
+    var text = ["Exceed client expectations","Build richer relationships"];
+    var counter = 0;
+    var elem = $("#sliding-title");
+    var inst = setInterval(change, 1000);
+
+    function change() {
+      elem.fadeOut(function(){
+          elem.html(text[counter]);
+          counter++;
+          if(counter >= text.length) { counter = 0; }
+          elem.fadeIn();
+      });
+  }
+
+  
