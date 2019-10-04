@@ -144,6 +144,11 @@ header{
 body{
   color: black;
 }
+#sliding-title{
+transition: .5s;
+}
+
+
 .corefactors-logo{
   width: auto;
   height: 30px;
@@ -433,7 +438,42 @@ footer{
     }
     
     .section-5 {
-      height: 1920px;
+      height: 1120px;
+  }
+  .section-6-cards{
+    background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+    display: flex;
+    height: 900px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    & div{
+      margin: auto 2.5%;
+      height: 375px;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      width:25%;
+      text-align: left;
+      padding: 10px 20px 0px;
+      img{
+        width: 84.8px;
+        height: 84.8px;
+        object-fit: contain;
+        padding:10px;
+      }
+      h1{
+        font-size: 15px;
+    color: #006cff;
+    text-align: center;
+    padding: 10px 0;
+      }
+      p{
+        font-size: 1.6vw;
+        text-align: justify;
+      }
+    }
   }
   footer{
     display: flex;
@@ -537,7 +577,7 @@ footer{
                 .section-6-cards{
                   background-image:linear-gradient(to bottom, #779cff, #90e5ff);
                   display: flex;
-                  height: 1200px;
+                  height: 1000px;
                   flex-wrap: wrap;
                   align-items: center;
                   justify-content: center;
@@ -675,8 +715,8 @@ footer{
                         }
                         .svg-ipad{
                           margin: 0;
-                          width: 64%;
-                          top: 0px;
+                          width: 58%;
+                          top: -130px;
                           left: 100px;
                           padding: 10px 0 0 0;
                         }
@@ -697,12 +737,17 @@ footer{
                               padding: 10px 0 0 0;
                         }
                       }
-                      .section-6-cards{
+                      .section-6-cards{ 
+                        padding: 5% 10%;
                         & div{
                           width:270px;
                         }
                       }
-  
+                      @media only screen and (min-width:1650px){
+                        .section-6-cards{
+                          padding: 5% 17%;
+                        }
+                      }
                     }
                 }
                 }
