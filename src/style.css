@@ -379,6 +379,41 @@ p {
   margin: 0 auto;
 }
 
+.btn-cta-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 86px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#006cff), to(#0b54b7));
+  background-image: linear-gradient(to bottom, #006cff, #0b54b7);
+}
+
+.btn-cta-container-1 p {
+  margin: auto 0;
+  padding-right: 20px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.44px;
+  color: #ffffff;
+}
+
+.btn-cta-container-1 .cta-btn {
+  border: none;
+  width: 218px;
+  height: 34px;
+  border-radius: 6px;
+  margin: auto 0;
+  background-color: #ffe18c;
+  padding-left: 20px;
+}
+
 .section-4 {
   position: relative;
   top: 20px;
@@ -398,7 +433,7 @@ p {
 
 .section-5 {
   position: relative;
-  top: 100px;
+  top: 0px;
   height: 1000px;
   background-color: #f4f4f4;
   text-align: center;
@@ -418,11 +453,46 @@ p {
   padding-bottom: 30px;
 }
 
+.btn-cta-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 86px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe18c), to(#eabc39));
+  background-image: linear-gradient(to bottom, #ffe18c, #eabc39);
+}
+
+.btn-cta-container-2 p {
+  margin: auto 0;
+  padding-right: 20px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.44px;
+  color: #006cff;
+}
+
+.btn-cta-container-2 .cta-btn {
+  border: none;
+  width: 218px;
+  height: 34px;
+  border-radius: 6px;
+  margin: auto 0;
+  background-color: #ffe18c;
+  padding-left: 20px;
+}
+
 .section-6-cards {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2700ff), color-stop(53%, #006cff), to(#8dbfff));
   background-image: linear-gradient(to bottom, #2700ff, #006cff 53%, #8dbfff);
   position: relative;
-  top: 75px;
+  top: 0px;
   padding: 20px 10px 10px;
   height: 2120px;
 }
@@ -461,6 +531,43 @@ p {
   font-size: 12px;
   text-align: justify;
   word-spacing: -1px;
+}
+
+.section-6-cards .btn-cta-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 86px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-6-cards .btn-cta-container-3 p {
+  margin: auto 0;
+  padding-right: 20px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.44px;
+  color: #000000;
+}
+
+.section-6-cards .btn-cta-container-3 .cta-btn {
+  border: none;
+  width: 218px;
+  height: 34px;
+  border-radius: 6px;
+  margin: auto 0;
+  background-color: #ffe18c;
+  padding-left: 20px;
 }
 
 #canvas {
@@ -618,6 +725,7 @@ footer > div li {
   }
   .section-5 {
     height: 1032px;
+    top: 0px;
   }
   .section-5 .title-5-text {
     padding-top: 10px;
@@ -647,7 +755,7 @@ footer > div li {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    top: -3px;
+    top: -5px;
   }
   .section-6-cards div {
     margin: auto 2.5%;
@@ -789,7 +897,6 @@ footer > div li {
     padding-top: 0;
   }
   .section-5 {
-    top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -848,6 +955,10 @@ footer > div li {
   }
   .section-6-cards div p {
     font-size: 14px;
+  }
+  .section-6-cards .btn-cta-container-3 {
+    top: 925px;
+    position: absolute;
   }
 }
 
@@ -1030,6 +1141,7 @@ footer > div li {
   .section-5 {
     height: 650px;
     padding-bottom: 0px;
+    top: 0px;
   }
   .section-5 .title-5-text {
     width: 480px;
@@ -1046,6 +1158,10 @@ footer > div li {
   }
   .section-6-cards div {
     width: 270px;
+  }
+  .section-6-cards .btn-cta-container-3 {
+    top: 900px;
+    position: absolute;
   }
 }
 

@@ -319,6 +319,34 @@ p{
     display: block;
     margin: 0 auto;
 }
+.btn-cta-container-1{
+  display: flex;
+  height: 86px;
+  width: 100%;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #006cff, #0b54b7);
+  p{
+    margin: auto 0;
+    padding-right: 20px;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: 0.44px;
+    color: #ffffff;
+  }
+  .cta-btn{
+    border: none;
+    width: 218px;
+    height: 34px;
+    border-radius: 6px;
+    margin: auto 0;
+    background-color: #ffe18c;
+    padding-left:20px;
+  }
+
+}
 
 .section-4{
   position: relative;
@@ -339,7 +367,7 @@ p{
 
 .section-5{
   position: relative;
-  top: 100px;
+  top: 0px;
   height: 1000px;
   background-color: #f4f4f4;
   text-align: center;
@@ -356,11 +384,38 @@ p{
   font-size: 20px;
   padding-bottom: 30px;
 }
+.btn-cta-container-2{
+  display: flex;
+  height: 86px;
+  width: 100%;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #ffe18c, #eabc39);
+  p{
+    margin: auto 0;
+    padding-right: 20px;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: 0.44px;
+    color: #006cff;
+  }
+  .cta-btn{
+    border: none;
+    width: 218px;
+    height: 34px;
+    border-radius: 6px;
+    margin: auto 0;
+    background-color: #ffe18c;
+    padding-left:20px;
+  }
 
+}
 .section-6-cards{
   background-image:linear-gradient(to bottom, #2700ff, #006cff 53%, #8dbfff);
   position: relative;
-  top:75px;
+  top:0px;
   padding:20px 10px 10px;
   height: 2120px;
   & div{
@@ -394,6 +449,37 @@ p{
       word-spacing: -1px;
     
     }
+  }
+  .btn-cta-container-3{
+    display: flex;
+    height: 86px;
+    width: 100%;
+    justify-content: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+    
+    p{
+      margin: auto 0;
+      padding-right: 20px;
+      font-family: HelveticaNeue;
+      font-size: 22px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.23;
+      letter-spacing: 0.44px;
+      color: #000000;
+    }
+    .cta-btn{
+      border: none;
+      width: 218px;
+      height: 34px;
+      border-radius: 6px;
+      margin: auto 0;
+      background-color: #ffe18c;
+      padding-left:20px;
+    }
+  
   }
 }
 #canvas{
@@ -564,6 +650,7 @@ footer{
     
     .section-5 {
       height: 1032px;
+      top: 0px;
       .title-5-text{
         padding-top: 10px;
       h2{
@@ -587,7 +674,7 @@ footer{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -3px;
+    top: -5px;
     & div{
       margin: auto 2.5%;
       height: 375px;
@@ -716,7 +803,6 @@ footer{
                     }
                 }
                 .section-5{
-                    top: 50px;
                     display: flex;
                     flex-direction: row-reverse;
                     height: 500px;
@@ -762,6 +848,10 @@ footer{
                     p{
                       font-size: 14px;
                     }
+                  }
+                  .btn-cta-container-3{
+                    top: 925px;
+                    position: absolute;
                   }
                 }
                 @media only screen and (min-width:1200px){
@@ -957,7 +1047,8 @@ footer{
                       }
                       .section-5{
                         height:650px;
-                        padding-bottom:0px;
+                        padding-bottom: 0px;
+                        top: 0px;
                         .title-5-text{
                           width: 480px;
                           position: relative;
@@ -973,6 +1064,10 @@ footer{
                         padding: 5% 10%;
                         & div{
                           width:270px;
+                        }
+                        .btn-cta-container-3{
+                          top: 900px;
+                          position: absolute;
                         }
                       }
                       @media only screen and (min-width:1650px){

@@ -39,7 +39,7 @@ function fix_dpi() {
     var text = ["Exceed client expectations","Build richer relationships"];
     var counter = 0;
     var elem = $("#sliding-title");
-    var inst = setInterval(change, 1000);
+    var inst = setInterval(change, 1200);
 
     function change() {
       elem.fadeOut(function(){
