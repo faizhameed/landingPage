@@ -147,7 +147,7 @@ body{
 #sliding-title{
 transition: .5s;
 }
-
+p{font-size: 14px;}
 
 .corefactors-logo{
   width: auto;
@@ -162,7 +162,7 @@ top: 57px;
   }
 .section-title-1{
 width: 100%;
-height: 654px;
+height: 581px;
 opacity: 0.99;
 background-image: linear-gradient(to bottom, #779cff, #90e5ff);
 }
@@ -202,12 +202,14 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   font-family: "HelveticaNeue", sans-serif;
   position: relative;
   top: 30px;
+  font-size: 15px;
+  text-align: justify;
 }
 .title-1-btn{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 120px;
   align-items: center;
 }
 .title-1-btn button{
@@ -220,6 +222,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
 .btn-sft{
   background-color: #ffe18c;
   border: none;
+  font-weight: bolder;
 }
 .btn-sft:hover{
   border: 2px solid #ffe18c;
@@ -235,10 +238,19 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   color: white;
 }
 .section-2-text-image{
-  top: 30px;
+  top: 0px;
   position: relative;
   text-align: center;
-  padding: 10px 20px;
+  padding: 50px 20px;
+  h2{
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .section-2-text{
+    p{
+      text-align: justify;
+    }
+  }
 }
 .section-2-title{
   font-size: 19px;
@@ -250,9 +262,12 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   color: #484848;
   text-align: center;
   padding-top: 50px;
-  .text-underline{
-    border-bottom:3px solid red;
-  }
+ .underline{
+   height: 2px;
+   width: 111px;
+   background-color: #779cff;
+   margin:10px auto;
+ }
 }
 .section-2-subtitle{
   font-size: 24px;
@@ -273,18 +288,31 @@ p{
   font-family: "HelveticaNeue", sans-serif;
 }
 .section-3{
-  height: 1130px;
+  height: 1000px;
   background-image: linear-gradient(to bottom, #CADAFD, #c4edfa);
   opacity:1;
   text-align: center;
-  padding: 10px 20px;
+  padding: 40px 20px 10px;
+  .title-3-text{
+    p{
+      text-align: justify;
+    }
+  }
+  .svg-ipad {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:39px;
+}
 }
 .title-3-text .title{
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.21;
   letter-spacing: 0.17px;
   color: #484848;
+  padding-bottom: 30px;
 }
 .svg-ipad{
   width: 100%;
@@ -297,43 +325,75 @@ p{
   top: 20px;
   text-align: center;
   padding: 10px 20px;
-}
-.title-4-text>h1{
-  padding-bottom: 50px;
-  font-size: 28px;
-}
-.title-4-text p{
-  padding-bottom: 25px;
-  font-size: 14px;
+  .title-4-text{
+    h2{
+      font-size: 20px;
+      padding-bottom: 30px;
+    }
+    p{
+      text-align: justify;
+      padding-bottom: 0px;
+    }
+  }
 }
 
 .section-5{
   position: relative;
   top: 100px;
-  height: 1400px;
+  height: 1000px;
   background-color: #f4f4f4;
   text-align: center;
   padding: 10px 20px;
 }
 .title-5-text{
   padding-top: 50px;
+  p{
+    text-align: justify;
+  }
 }
-.title-5-text p{
-  font-size: 14px;
+
+.title-5-text h2{
+  font-size: 20px;
+  padding-bottom: 30px;
 }
-.title-5-text h1{
-  font-size: 28px;
-  padding-bottom: 50px;
-}
-.svg-ipad-4{
-  position: relative;
-    left: 52px;
-}
+
 .section-6-cards{
-  background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+  background-image:linear-gradient(to bottom, #2700ff, #006cff 53%, #8dbfff);
+  position: relative;
+  top:75px;
+  padding:20px 10px 10px;
+  height: 2120px;
   & div{
-    border-radius: 5px 20px 5px;
-    width:50%;
+    display:block;
+    margin: 20px auto;
+    height: 309px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    width:75%;
+    padding: 10px 25px 0px;
+    img{
+      width: 50%;
+      height: auto;
+      object-fit: contain;
+      padding:10px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
+   
+    h3{
+      font-size: 14px;
+      color: #006cff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    p{
+      font-size: 12px;
+      text-align: justify;
+      word-spacing: -1px;
+    
+    }
   }
 }
 #canvas{
@@ -368,11 +428,37 @@ footer{
   
 }
 @media only screen and (min-width:500px){
+.section-title-1{
+  .title-text{
+    h1{
+      font-size: 27px;
+    }
+    .title-para{
+      font-size: 16px;
+    }
+  }
+}
+
   .section-3{
     height: 900px;
+    .svg-ipad{
+      width: 84%;
+    }
+  }
+
+  .section-4{
+    .svg-ipad{
+      width: 85%;
+    }
   }
   .section-5{
-    height: 1900px;
+    height: 1100px;
+  }
+
+  .section-6-cards{
+    & div{
+      width: 59%;
+    }
   }
 
   @media only screen and (min-width:600px){
@@ -388,11 +474,29 @@ footer{
       height: 208px;
       padding: 0px 20px;
   }
+  .section-2{
+    .svg-ipad{
+      width: 84%;
+    }
+  }
   .section-3{
     height: 850px;
+    .svg-ipad{
+      width:70%;
+    }
   }
   .section-5 {
-    height: 1920px;
+    height: 1120px;
+}
+.section-6-cards{
+  height: 2423px;
+  & div{
+    width: 55%;
+    height: 355px;
+    p{
+      font-size: 14px;
+    }
+  }
 }
     @media only screen and (min-width:750px){
       .section-title-1 {
@@ -409,48 +513,81 @@ footer{
       .title-1-btn{
         flex-direction: row;
         padding-left: 70px;
+        top: 51px;
       }
       .title-1-btn button {
-        width: 30%;
+        width: 200px;
         margin: 10px 10px;
         margin-top: 68px;
     }
-    .section-2-title{
-      font-size: 21px;
-      line-height: 1.24;
-      letter-spacing: 0.13px;
-      color: #484848;
+    .section-2{
+      .section-2-text-image{
+     padding:0px 20px 50px;
+     h2{
+       padding-bottom: 0;
+     }
+      }
+      .section-2-title{
+        font-size: 21px;
+        line-height: 1.24;
+        letter-spacing: 0.13px;
+        color: #484848;
+      }
+      .section-2-subtitle {
+        line-height: 3.21;
+      }
     }
 
     
-    .section-2-subtitle {
-      line-height: 3.21;
-    }
-    .svg-ipad{
-      padding-top: 50px;
-      width: 800px;
-    }
-    .title-3-text{
-      padding-top: 30px;
-    }
-    .title-3-text .para{
-      padding-top: 30px;
-    }
+    
     .section-3{
       height:1000px;
+    padding: 0 20px 10px;
+      .title-3-text{
+        padding-top: 20px;
+      }
+      .title-3-text .para{
+        padding-top: 0px;
+      }
+    }
+    .section-4{
+      padding: 0 20px 10px;
+      .title-4-text{
+        h2{
+          padding-bottom: 20px;
+        }
+      }
+      .svg-ipad {
+        width: 71%;
+    }
     }
     
     .section-5 {
-      height: 1120px;
+      height: 1032px;
+      .title-5-text{
+        padding-top: 10px;
+      h2{
+        padding-bottom: 20px;
+
+      }
+    }
+        .svg-ipad {
+          width: 550px;
+          display: block;
+          margin: 0 auto;
+      }
   }
   .section-6-cards{
-    background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+    background-image:url("./svg-files/card-svgs/Group\ 269.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     height: 900px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: relative;
+    top: -3px;
     & div{
       margin: auto 2.5%;
       height: 375px;
@@ -458,7 +595,7 @@ footer{
       border-radius: 25px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
       width:25%;
-      text-align: left;
+      text-align: center;
       padding: 10px 20px 0px;
       img{
         width: 84.8px;
@@ -466,7 +603,8 @@ footer{
         object-fit: contain;
         padding:10px;
       }
-      h1{
+     
+      h3{
         font-size: 15px;
     color: #006cff;
     text-align: center;
@@ -482,6 +620,7 @@ footer{
     display: flex;
     justify-content: space-around;
     height: 210px;
+    padding: 10px 10px 0px 30px;
     .footer-menu-3{
       position: relative;
     bottom: 27px;
@@ -494,6 +633,14 @@ footer{
       }
     }
   }
+  @media only screen and (min-width:800px){
+    .section-5 {
+      height: 1100px;
+      .svg-ipad{
+        width: 600px;
+      }
+  }
+
     @media only screen and (min-width:992px) {
                     .nav-signin-up{
                         position: absolute;
@@ -525,30 +672,34 @@ footer{
                     .section-2-text{
                             text-align: right;
                             margin-left: 25px;
+                            width: 465px;
                         & > .section-2-subtitle{
                             line-height: 1.21;
                             padding-bottom: 20px;
                     }
                     }
                     & .svg-ipad {
-                        width: 521px;
+                      width: 507px;
+                      position: relative;
+                      padding-left: 35px;
                     }
                     .section-2-para{
-                        padding-bottom: 100px;
+                        padding-bottom: 0px;
                     }
                 }
 
             .section-3{
                 display:flex;
-                height: 570px;
+                height: 550px;
                 flex-direction: row-reverse;
                 .title-3-text{
-                    text-align: left;
-                    margin-right: 25px;
+                  text-align: left;
+                  margin-right: 25px;
+                  width: 465px;
                 }
                 & .svg-ipad {
-                width: 521px;
-                padding-top: 0;
+                  width: 437px;
+                  top: -49px;
             }
                 }
                 .section-4 {
@@ -557,9 +708,10 @@ footer{
                     .title-4-text{
                         text-align: right;
                         margin-left: 25px;
+                        width: 465px;
                     }
                     & .svg-ipad {
-                        width: 521px;
+                        width: 475px;
                         padding-top: 0;
                     }
                 }
@@ -567,18 +719,22 @@ footer{
                     top: 50px;
                     display: flex;
                     flex-direction: row-reverse;
-                    height: 900px;
+                    height: 500px;
                     .title-5-text{
                         text-align: left;
                         margin-right: 25px;
+                        width: 465px;
                     }
                     & .svg-ipad {
-                        width: 521px;
-                        padding-top: 0;
+                      width: 304px;
+                      padding-top: 0;
+                      position: relative;
+                      bottom: 76px;
+                  
                     }
                 }
                 .section-6-cards{
-                  background-image:linear-gradient(to bottom, #779cff, #90e5ff);
+                  
                   display: flex;
                   height: 1000px;
                   flex-wrap: wrap;
@@ -599,7 +755,7 @@ footer{
                       object-fit: contain;
                       padding:10px;
                     }
-                    h1{
+                    h3{
                       font-size: 18px;
                       color: #006cff;
                     }
@@ -628,19 +784,21 @@ footer{
                 }
                 .section-2-text-image{
                   .section-2-text{
-                    width:480px;
+                    width: 480px;
+                    margin: 0 auto;
                   }
                     .svg-ipad{
                       width: 523px;
-                      top: -85px;
-                      left: 26px;
-                      position: relative;
+                      top: 0;
+                      left: 0px;
+                      position: relative; 
                     }
                 }
                 .section-3{
                     height: 500px;
                     .title-3-text{
                       width: 480px;
+                      margin: 0 auto;
                     }
                 }
                 .section-4{
@@ -654,10 +812,10 @@ footer{
                       width: 480px;
                     }
                     .svg-ipad {
-                      width: 662px;
+                      width: 352px;
                       padding-top: 0;
                       position: relative;
-                      top: -93px;
+                      top: -134px;
                     }
                 }
                 .section-6-cards{
@@ -666,19 +824,34 @@ footer{
                   }
                 }
                 @media only screen and (min-width:1300px){
+                  .section-title-1{
+                    .title-text {
+                    position: relative;
+                    top: 38px;
+                    padding-left: 117px;
+                    h1{
+                      font-size: 37px;
+                    }
+                    .title-para{
+                      top :0;
+                      font-size:17px;
+                      
+                    }
+                }
+                .line-svg{
+                  padding: 0px 133px;
+                  height: 220px;}
+                  .title-1-btn {
+                 
+                    padding-left: 153px;
+                }
+                }
                   .section-2-text-image{
                     padding-bottom:0px;
                     .section-2-text{
                         width: 480px;
                         position: relative;
                         left: 10%;
-                    }
-                    .svg-ipad{
-                      margin: 0;
-                      width: 42%;
-                      top: -68px;
-                      left: 169px;
-                      padding: 10px 0 0 0;
                     }
                 }
                 .section-3{
@@ -689,13 +862,7 @@ footer{
                     position: relative;
                     right: 10%;
                   }
-                  .svg-ipad{
-                        margin: 0;
-                        width: 64%;
-                        top: 0px;
-                        right: 100px;
-                        padding: 10px 0 0 0;
-                  }
+                  
                 }
                 .section-4{
                   padding-bottom:0px;
@@ -705,11 +872,7 @@ footer{
                     left: 10%;
                   }
                   .svg-ipad{
-                    margin: 0;
-                    width: 58%;
-                    top: -130px;
-                    left: 100px;
-                    padding: 10px 0 0 0;
+                    width: 500px;
                   }
                 }
                 .section-5{
@@ -721,11 +884,8 @@ footer{
                     right: 10%;
                   }
                   .svg-ipad{
-                    margin: 0;
-                    width: 49%;
                     top: -78px;
-                    right: 100px;
-                    padding: 10px 0 0 0
+                    padding: 10px 0 0 0;
                   }
                 }
                   .section-6-cards{
@@ -735,14 +895,20 @@ footer{
                   }
 
                   @media only screen and (min-width:1400px){
-                    .line-svg {
-                      padding: 0px 200px;
-                      height: 277px;
-                  }
+                    
                     .section-title-1{
                       padding-left: 160px;
-                      .title-text h1 {
+                      .title-text {
+                        position: relative;
+                        top: 28px;
+                        padding-left: 108px;
+                        h1 {
                         font-size: 50px;
+                      }
+                    }
+                        .line-svg {
+                          padding: 0px 260px;
+                          height: 232px;
                       }
                           .title-para{
                             font-size: 20px;
@@ -762,13 +928,7 @@ footer{
                               position: relative;
                               left: 10%;
                           }
-                          .svg-ipad{
-                            margin: 0;
-                            width: 42%;
-                            top: -68px;
-                            left: 169px;
-                            padding: 10px 0 0 0;
-                          }
+                          
                       }
                       .section-3{
                         height: 550px;
@@ -778,13 +938,7 @@ footer{
                           position: relative;
                           right: 10%;
                         }
-                        .svg-ipad{
-                              margin: 0;
-                              width: 64%;
-                              top: 0px;
-                              right: 100px;
-                              padding: 10px 0 0 0;
-                        }
+                        
                       }
                       .section-4{
                         padding-bottom:0px;
@@ -793,13 +947,13 @@ footer{
                           position: relative;
                           left: 10%;
                         }
-                        .svg-ipad{
+                        /* .svg-ipad{
                           margin: 0;
                           width: 58%;
                           top: -130px;
                           left: 100px;
                           padding: 10px 0 0 0;
-                        }
+                        } */
                       }
                       .section-5{
                         height:650px;
@@ -810,10 +964,8 @@ footer{
                           right: 19%;
                         }
                         .svg-ipad{
-                          margin: 0;
-                          width: 49%;
-                          top: -74px;
-                          right: 185px;
+                          top: -124px;
+                          right: 59px;
                           padding: 10px 0 0 0;
                         }
                       }
@@ -829,11 +981,7 @@ footer{
                             width: 32%
                           }
                         }
-                        .section-5{
-                          .svg-ipad{
-                            width: 39%;
-                          }
-                        }
+                       
                         .section-6-cards{
                           padding: 5% 17%;
                         }
@@ -842,6 +990,7 @@ footer{
                 }
                 }
             }
+  }
         }
     }
 }
