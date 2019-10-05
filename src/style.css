@@ -172,6 +172,10 @@ body {
   transition: .5s;
 }
 
+p {
+  font-size: 14px;
+}
+
 .corefactors-logo {
   width: auto;
   height: 30px;
@@ -188,7 +192,7 @@ body {
 
 .section-title-1 {
   width: 100%;
-  height: 654px;
+  height: 581px;
   opacity: 0.99;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
   background-image: linear-gradient(to bottom, #779cff, #90e5ff);
@@ -236,6 +240,8 @@ body {
   font-family: "HelveticaNeue", sans-serif;
   position: relative;
   top: 30px;
+  font-size: 15px;
+  text-align: justify;
 }
 
 .title-1-btn {
@@ -247,7 +253,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,6 +269,7 @@ body {
 .btn-sft {
   background-color: #ffe18c;
   border: none;
+  font-weight: bolder;
 }
 
 .btn-sft:hover {
@@ -282,10 +289,19 @@ body {
 }
 
 .section-2-text-image {
-  top: 30px;
+  top: 0px;
   position: relative;
   text-align: center;
-  padding: 10px 20px;
+  padding: 50px 20px;
+}
+
+.section-2-text-image h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.section-2-text-image .section-2-text p {
+  text-align: justify;
 }
 
 .section-2-title {
@@ -300,8 +316,11 @@ body {
   padding-top: 50px;
 }
 
-.section-2-title .text-underline {
-  border-bottom: 3px solid red;
+.section-2-title .underline {
+  height: 2px;
+  width: 111px;
+  background-color: #779cff;
+  margin: 10px auto;
 }
 
 .section-2-subtitle {
@@ -325,20 +344,33 @@ p {
 }
 
 .section-3 {
-  height: 1130px;
+  height: 1000px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#CADAFD), to(#c4edfa));
   background-image: linear-gradient(to bottom, #CADAFD, #c4edfa);
   opacity: 1;
   text-align: center;
-  padding: 10px 20px;
+  padding: 40px 20px 10px;
+}
+
+.section-3 .title-3-text p {
+  text-align: justify;
+}
+
+.section-3 .svg-ipad {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 39px;
 }
 
 .title-3-text .title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.21;
   letter-spacing: 0.17px;
   color: #484848;
+  padding-bottom: 30px;
 }
 
 .svg-ipad {
@@ -354,20 +386,20 @@ p {
   padding: 10px 20px;
 }
 
-.title-4-text > h1 {
-  padding-bottom: 50px;
-  font-size: 28px;
+.section-4 .title-4-text h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
-.title-4-text p {
-  padding-bottom: 25px;
-  font-size: 14px;
+.section-4 .title-4-text p {
+  text-align: justify;
+  padding-bottom: 0px;
 }
 
 .section-5 {
   position: relative;
   top: 100px;
-  height: 1400px;
+  height: 1000px;
   background-color: #f4f4f4;
   text-align: center;
   padding: 10px 20px;
@@ -378,27 +410,57 @@ p {
 }
 
 .title-5-text p {
-  font-size: 14px;
+  text-align: justify;
 }
 
-.title-5-text h1 {
-  font-size: 28px;
-  padding-bottom: 50px;
-}
-
-.svg-ipad-4 {
-  position: relative;
-  left: 52px;
+.title-5-text h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .section-6-cards {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
-  background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2700ff), color-stop(53%, #006cff), to(#8dbfff));
+  background-image: linear-gradient(to bottom, #2700ff, #006cff 53%, #8dbfff);
+  position: relative;
+  top: 75px;
+  padding: 20px 10px 10px;
+  height: 2120px;
 }
 
 .section-6-cards div {
-  border-radius: 5px 20px 5px;
+  display: block;
+  margin: 20px auto;
+  height: 309px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  width: 75%;
+  padding: 10px 25px 0px;
+}
+
+.section-6-cards div img {
   width: 50%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.section-6-cards div h3 {
+  font-size: 14px;
+  color: #006cff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-6-cards div p {
+  font-size: 12px;
+  text-align: justify;
+  word-spacing: -1px;
 }
 
 #canvas {
@@ -435,11 +497,26 @@ footer > div li {
 }
 
 @media only screen and (min-width: 500px) {
+  .section-title-1 .title-text h1 {
+    font-size: 27px;
+  }
+  .section-title-1 .title-text .title-para {
+    font-size: 16px;
+  }
   .section-3 {
     height: 900px;
   }
+  .section-3 .svg-ipad {
+    width: 84%;
+  }
+  .section-4 .svg-ipad {
+    width: 85%;
+  }
   .section-5 {
-    height: 1900px;
+    height: 1100px;
+  }
+  .section-6-cards div {
+    width: 59%;
   }
 }
 
@@ -456,11 +533,27 @@ footer > div li {
     height: 208px;
     padding: 0px 20px;
   }
+  .section-2 .svg-ipad {
+    width: 84%;
+  }
   .section-3 {
     height: 850px;
   }
+  .section-3 .svg-ipad {
+    width: 70%;
+  }
   .section-5 {
-    height: 1920px;
+    height: 1120px;
+  }
+  .section-6-cards {
+    height: 2423px;
+  }
+  .section-6-cards div {
+    width: 55%;
+    height: 355px;
+  }
+  .section-6-cards div p {
+    font-size: 14px;
   }
 }
 
@@ -482,40 +575,65 @@ footer > div li {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-left: 70px;
+    top: 51px;
   }
   .title-1-btn button {
-    width: 30%;
+    width: 200px;
     margin: 10px 10px;
     margin-top: 68px;
   }
-  .section-2-title {
+  .section-2 .section-2-text-image {
+    padding: 0px 20px 50px;
+  }
+  .section-2 .section-2-text-image h2 {
+    padding-bottom: 0;
+  }
+  .section-2 .section-2-title {
     font-size: 21px;
     line-height: 1.24;
     letter-spacing: 0.13px;
     color: #484848;
   }
-  .section-2-subtitle {
+  .section-2 .section-2-subtitle {
     line-height: 3.21;
-  }
-  .svg-ipad {
-    padding-top: 50px;
-    width: 800px;
-  }
-  .title-3-text {
-    padding-top: 30px;
-  }
-  .title-3-text .para {
-    padding-top: 30px;
   }
   .section-3 {
     height: 1000px;
+    padding: 0 20px 10px;
+  }
+  .section-3 .title-3-text {
+    padding-top: 20px;
+  }
+  .section-3 .title-3-text .para {
+    padding-top: 0px;
+  }
+  .section-4 {
+    padding: 0 20px 10px;
+  }
+  .section-4 .title-4-text h2 {
+    padding-bottom: 20px;
+  }
+  .section-4 .svg-ipad {
+    width: 71%;
   }
   .section-5 {
-    height: 1120px;
+    height: 1032px;
+  }
+  .section-5 .title-5-text {
+    padding-top: 10px;
+  }
+  .section-5 .title-5-text h2 {
+    padding-bottom: 20px;
+  }
+  .section-5 .svg-ipad {
+    width: 550px;
+    display: block;
+    margin: 0 auto;
   }
   .section-6-cards {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
-    background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+    background-image: url("./svg-files/card-svgs/Group 269.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -529,6 +647,7 @@ footer > div li {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    top: -3px;
   }
   .section-6-cards div {
     margin: auto 2.5%;
@@ -538,7 +657,7 @@ footer > div li {
     -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     width: 25%;
-    text-align: left;
+    text-align: center;
     padding: 10px 20px 0px;
   }
   .section-6-cards div img {
@@ -548,7 +667,7 @@ footer > div li {
        object-fit: contain;
     padding: 10px;
   }
-  .section-6-cards div h1 {
+  .section-6-cards div h3 {
     font-size: 15px;
     color: #006cff;
     text-align: center;
@@ -565,6 +684,7 @@ footer > div li {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 210px;
+    padding: 10px 10px 0px 30px;
   }
   footer .footer-menu-3 {
     position: relative;
@@ -579,7 +699,16 @@ footer > div li {
   }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) {
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) {
+  .section-5 {
+    height: 1100px;
+  }
+  .section-5 .svg-ipad {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) {
   .nav-signin-up {
     position: absolute;
     right: 0px;
@@ -611,22 +740,25 @@ footer > div li {
   .section-2-text-image .section-2-text {
     text-align: right;
     margin-left: 25px;
+    width: 465px;
   }
   .section-2-text-image .section-2-text > .section-2-subtitle {
     line-height: 1.21;
     padding-bottom: 20px;
   }
   .section-2-text-image .svg-ipad {
-    width: 521px;
+    width: 507px;
+    position: relative;
+    padding-left: 35px;
   }
   .section-2-text-image .section-2-para {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
   .section-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 570px;
+    height: 550px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -635,10 +767,11 @@ footer > div li {
   .section-3 .title-3-text {
     text-align: left;
     margin-right: 25px;
+    width: 465px;
   }
   .section-3 .svg-ipad {
-    width: 521px;
-    padding-top: 0;
+    width: 437px;
+    top: -49px;
   }
   .section-4 {
     top: 50px;
@@ -649,9 +782,10 @@ footer > div li {
   .section-4 .title-4-text {
     text-align: right;
     margin-left: 25px;
+    width: 465px;
   }
   .section-4 .svg-ipad {
-    width: 521px;
+    width: 475px;
     padding-top: 0;
   }
   .section-5 {
@@ -663,19 +797,20 @@ footer > div li {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    height: 900px;
+    height: 500px;
   }
   .section-5 .title-5-text {
     text-align: left;
     margin-right: 25px;
+    width: 465px;
   }
   .section-5 .svg-ipad {
-    width: 521px;
+    width: 304px;
     padding-top: 0;
+    position: relative;
+    bottom: 76px;
   }
   .section-6-cards {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#779cff), to(#90e5ff));
-    background-image: linear-gradient(to bottom, #779cff, #90e5ff);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -707,7 +842,7 @@ footer > div li {
        object-fit: contain;
     padding: 10px;
   }
-  .section-6-cards div h1 {
+  .section-6-cards div h3 {
     font-size: 18px;
     color: #006cff;
   }
@@ -716,7 +851,7 @@ footer > div li {
   }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) {
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) {
   .line-svg {
     height: 234px;
   }
@@ -733,11 +868,12 @@ footer > div li {
   }
   .section-2-text-image .section-2-text {
     width: 480px;
+    margin: 0 auto;
   }
   .section-2-text-image .svg-ipad {
     width: 523px;
-    top: -85px;
-    left: 26px;
+    top: 0;
+    left: 0px;
     position: relative;
   }
   .section-3 {
@@ -745,6 +881,7 @@ footer > div li {
   }
   .section-3 .title-3-text {
     width: 480px;
+    margin: 0 auto;
   }
   .section-4 .title-4-text {
     width: 480px;
@@ -756,17 +893,36 @@ footer > div li {
     width: 480px;
   }
   .section-5 .svg-ipad {
-    width: 662px;
+    width: 352px;
     padding-top: 0;
     position: relative;
-    top: -93px;
+    top: -134px;
   }
   .section-6-cards div {
     width: 23%;
   }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) {
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) {
+  .section-title-1 .title-text {
+    position: relative;
+    top: 38px;
+    padding-left: 117px;
+  }
+  .section-title-1 .title-text h1 {
+    font-size: 37px;
+  }
+  .section-title-1 .title-text .title-para {
+    top: 0;
+    font-size: 17px;
+  }
+  .section-title-1 .line-svg {
+    padding: 0px 133px;
+    height: 220px;
+  }
+  .section-title-1 .title-1-btn {
+    padding-left: 153px;
+  }
   .section-2-text-image {
     padding-bottom: 0px;
   }
@@ -774,13 +930,6 @@ footer > div li {
     width: 480px;
     position: relative;
     left: 10%;
-  }
-  .section-2-text-image .svg-ipad {
-    margin: 0;
-    width: 42%;
-    top: -68px;
-    left: 169px;
-    padding: 10px 0 0 0;
   }
   .section-3 {
     height: 550px;
@@ -791,13 +940,6 @@ footer > div li {
     position: relative;
     right: 10%;
   }
-  .section-3 .svg-ipad {
-    margin: 0;
-    width: 64%;
-    top: 0px;
-    right: 100px;
-    padding: 10px 0 0 0;
-  }
   .section-4 {
     padding-bottom: 0px;
   }
@@ -807,11 +949,7 @@ footer > div li {
     left: 10%;
   }
   .section-4 .svg-ipad {
-    margin: 0;
-    width: 58%;
-    top: -130px;
-    left: 100px;
-    padding: 10px 0 0 0;
+    width: 500px;
   }
   .section-5 {
     height: 600px;
@@ -823,10 +961,7 @@ footer > div li {
     right: 10%;
   }
   .section-5 .svg-ipad {
-    margin: 0;
-    width: 49%;
     top: -78px;
-    right: 100px;
     padding: 10px 0 0 0;
   }
   .section-6-cards div {
@@ -834,16 +969,21 @@ footer > div li {
   }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) {
-  .line-svg {
-    padding: 0px 200px;
-    height: 277px;
-  }
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) {
   .section-title-1 {
     padding-left: 160px;
   }
+  .section-title-1 .title-text {
+    position: relative;
+    top: 28px;
+    padding-left: 108px;
+  }
   .section-title-1 .title-text h1 {
     font-size: 50px;
+  }
+  .section-title-1 .line-svg {
+    padding: 0px 260px;
+    height: 232px;
   }
   .section-title-1 .title-para {
     font-size: 20px;
@@ -863,13 +1003,6 @@ footer > div li {
     position: relative;
     left: 10%;
   }
-  .section-2-text-image .svg-ipad {
-    margin: 0;
-    width: 42%;
-    top: -68px;
-    left: 169px;
-    padding: 10px 0 0 0;
-  }
   .section-3 {
     height: 550px;
     padding-bottom: 0px;
@@ -879,27 +1012,20 @@ footer > div li {
     position: relative;
     right: 10%;
   }
-  .section-3 .svg-ipad {
-    margin: 0;
-    width: 64%;
-    top: 0px;
-    right: 100px;
-    padding: 10px 0 0 0;
-  }
   .section-4 {
     padding-bottom: 0px;
+    /* .svg-ipad{
+                          margin: 0;
+                          width: 58%;
+                          top: -130px;
+                          left: 100px;
+                          padding: 10px 0 0 0;
+                        } */
   }
   .section-4 .title-4-text {
     width: 480px;
     position: relative;
     left: 10%;
-  }
-  .section-4 .svg-ipad {
-    margin: 0;
-    width: 58%;
-    top: -130px;
-    left: 100px;
-    padding: 10px 0 0 0;
   }
   .section-5 {
     height: 650px;
@@ -911,10 +1037,8 @@ footer > div li {
     right: 19%;
   }
   .section-5 .svg-ipad {
-    margin: 0;
-    width: 49%;
-    top: -74px;
-    right: 185px;
+    top: -124px;
+    right: 59px;
     padding: 10px 0 0 0;
   }
   .section-6-cards {
@@ -925,12 +1049,9 @@ footer > div li {
   }
 }
 
-@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) and (min-width: 1650px) {
+@media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) and (min-width: 1650px) {
   .section-2-text-image .svg-ipad {
     width: 32%;
-  }
-  .section-5 .svg-ipad {
-    width: 39%;
   }
   .section-6-cards {
     padding: 5% 17%;
