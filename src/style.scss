@@ -145,7 +145,8 @@ body{
   color: black;
 }
 #sliding-title{
-transition: .5s;
+  height: 5vh;
+  overflow: hidden;
 }
 p{font-size: 14px;}
 
@@ -321,29 +322,33 @@ p{
 }
 .btn-cta-container-1{
   display: flex;
-  height: 86px;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
   width: 100%;
-  justify-content: center;
   background-image: linear-gradient(to bottom, #006cff, #0b54b7);
   p{
     margin: auto 0;
     padding-right: 20px;
     font-family: HelveticaNeue;
-    font-size: 22px;
+    font-size: 17px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.23;
     letter-spacing: 0.44px;
     color: #ffffff;
+    text-align: center;
   }
   .cta-btn{
     border: none;
     width: 218px;
     height: 34px;
     border-radius: 6px;
-    margin: auto 0;
     background-color: #ffe18c;
-    padding-left:20px;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
   }
 
 }
@@ -386,19 +391,22 @@ p{
 }
 .btn-cta-container-2{
   display: flex;
-  height: 86px;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
   width: 100%;
-  justify-content: center;
   background-image: linear-gradient(to bottom, #ffe18c, #eabc39);
   p{
     margin: auto 0;
     padding-right: 20px;
     font-family: HelveticaNeue;
-    font-size: 22px;
+    font-size: 17px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.23;
     letter-spacing: 0.44px;
+    text-align: center;
     color: #006cff;
   }
   .cta-btn{
@@ -406,9 +414,10 @@ p{
     width: 218px;
     height: 34px;
     border-radius: 6px;
-    margin: auto 0;
     background-color: #ffe18c;
-    padding-left:20px;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
   }
 
 }
@@ -452,32 +461,37 @@ p{
   }
   .btn-cta-container-3{
     display: flex;
-    height: 86px;
-    width: 100%;
-    justify-content: center;
-    background: none;
-    border: none;
-    box-shadow: none;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  background: none;
+  box-shadow:none;
+  position: relative;
+  top: -10px;
     
     p{
       margin: auto 0;
       padding-right: 20px;
       font-family: HelveticaNeue;
-      font-size: 22px;
+      font-size: 17px;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.23;
       letter-spacing: 0.44px;
       color: #000000;
+      text-align: center;
     }
     .cta-btn{
       border: none;
-      width: 218px;
-      height: 34px;
-      border-radius: 6px;
-      margin: auto 0;
-      background-color: #ffe18c;
-      padding-left:20px;
+    width: 218px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #ffe18c;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
     }
   
   }
@@ -636,6 +650,16 @@ footer{
         padding-top: 0px;
       }
     }
+    .btn-cta-container-1,.btn-cta-container-2{
+      flex-direction: row;
+      p{
+        margin: auto;
+      }
+      .cta-btn{
+        margin: auto;
+      }
+    }
+
     .section-4{
       padding: 0 20px 10px;
       .title-4-text{
@@ -675,6 +699,18 @@ footer{
     justify-content: center;
     position: relative;
     top: -5px;
+    padding-bottom: 50px;
+    & .btn-cta-container-3{
+      flex-direction: row;
+      position: absolute;
+      top: 800px;
+      & p{
+        margin: auto;
+      }
+      & .cta-btn{
+        margin: auto;
+      }
+    }
     & div{
       margin: auto 2.5%;
       height: 375px;
@@ -734,12 +770,12 @@ footer{
                         right: 0px;
                     }
                     .nav-free-trial{
-                        position: absolute;
-                        right: 128px;
+                      position: absolute;
+                      right: 81px;
                     }
                     .nav-pricing{
-                        position: absolute;
-                        right: 224px;
+                      position: absolute;
+                      right: 172px;
                     }
 
                     .sub-menu {
@@ -789,6 +825,12 @@ footer{
                   top: -49px;
             }
                 }
+
+                .btn-cta-container-1, .btn-cta-container-2{
+                  p{
+                    font-size: 20px;
+                  }
+                }
                 .section-4 {
                     top: 50px;
                     display: flex;
@@ -802,10 +844,14 @@ footer{
                         padding-top: 0;
                     }
                 }
+                .btn-cta-container-2{
+                  position: relative;
+                }
                 .section-5{
                     display: flex;
                     flex-direction: row-reverse;
                     height: 500px;
+                    top: 48px;
                     .title-5-text{
                         text-align: left;
                         margin-right: 25px;
@@ -819,6 +865,7 @@ footer{
                   
                     }
                 }
+               
                 .section-6-cards{
                   
                   display: flex;
@@ -850,8 +897,10 @@ footer{
                     }
                   }
                   .btn-cta-container-3{
-                    top: 925px;
-                    position: absolute;
+                    top: 900px;
+                    p{
+                      font-size: 20px;
+                    }
                   }
                 }
                 @media only screen and (min-width:1200px){
@@ -897,7 +946,7 @@ footer{
                   }
                 }
                 .section-5{
-                    height: 695px;
+                    height: 500px;
                     .title-5-text{
                       width: 480px;
                     }
@@ -905,7 +954,7 @@ footer{
                       width: 352px;
                       padding-top: 0;
                       position: relative;
-                      top: -134px;
+                      top: -52px;
                     }
                 }
                 .section-6-cards{
@@ -914,6 +963,9 @@ footer{
                   }
                 }
                 @media only screen and (min-width:1300px){
+                  #sliding-title {
+                    height: 8vh;
+                }
                   .section-title-1{
                     .title-text {
                     position: relative;
@@ -985,6 +1037,9 @@ footer{
                   }
 
                   @media only screen and (min-width:1400px){
+                    #sliding-title {
+                      height: 10vh;
+                  }
                     
                     .section-title-1{
                       padding-left: 160px;
@@ -1046,16 +1101,16 @@ footer{
                         } */
                       }
                       .section-5{
-                        height:650px;
+                        height: 500px;
                         padding-bottom: 0px;
-                        top: 0px;
+                        top: 64px;
                         .title-5-text{
                           width: 480px;
                           position: relative;
                           right: 19%;
                         }
                         .svg-ipad{
-                          top: -124px;
+                          top: -51px;
                           right: 59px;
                           padding: 10px 0 0 0;
                         }
