@@ -145,7 +145,7 @@ body{
   color: black;
 }
 #sliding-title{
-  height: 5vh;
+  height: 25px;
   overflow: hidden;
 }
 p{font-size: 14px;}
@@ -537,6 +537,10 @@ footer{
       font-size: 16px;
     }
   }
+}
+#sliding-title {
+  height: 35px;
+  overflow: hidden;
 }
 
   .section-3{
@@ -964,7 +968,7 @@ footer{
                 }
                 @media only screen and (min-width:1300px){
                   #sliding-title {
-                    height: 8vh;
+                    height: 50px;
                 }
                   .section-title-1{
                     .title-text {
@@ -1038,7 +1042,7 @@ footer{
 
                   @media only screen and (min-width:1400px){
                     #sliding-title {
-                      height: 10vh;
+                      height: 62px;
                   }
                     
                     .section-title-1{
