@@ -145,7 +145,8 @@ body{
   color: black;
 }
 #sliding-title{
-transition: .5s;
+  height: 5vh;
+  overflow: hidden;
 }
 p{font-size: 14px;}
 
@@ -385,6 +386,7 @@ p{
   padding-bottom: 30px;
 }
 .btn-cta-container-2{
+  position: relative;
   display: flex;
   height: 86px;
   width: 100%;
@@ -734,12 +736,12 @@ footer{
                         right: 0px;
                     }
                     .nav-free-trial{
-                        position: absolute;
-                        right: 128px;
+                      position: absolute;
+                      right: 81px;
                     }
                     .nav-pricing{
-                        position: absolute;
-                        right: 224px;
+                      position: absolute;
+                      right: 172px;
                     }
 
                     .sub-menu {
@@ -806,6 +808,7 @@ footer{
                     display: flex;
                     flex-direction: row-reverse;
                     height: 500px;
+                    top: 48px;
                     .title-5-text{
                         text-align: left;
                         margin-right: 25px;
@@ -819,6 +822,7 @@ footer{
                   
                     }
                 }
+               
                 .section-6-cards{
                   
                   display: flex;
@@ -897,7 +901,7 @@ footer{
                   }
                 }
                 .section-5{
-                    height: 695px;
+                    height: 500px;
                     .title-5-text{
                       width: 480px;
                     }
@@ -905,7 +909,7 @@ footer{
                       width: 352px;
                       padding-top: 0;
                       position: relative;
-                      top: -134px;
+                      top: -52px;
                     }
                 }
                 .section-6-cards{
@@ -914,6 +918,9 @@ footer{
                   }
                 }
                 @media only screen and (min-width:1300px){
+                  #sliding-title {
+                    height: 8vh;
+                }
                   .section-title-1{
                     .title-text {
                     position: relative;
@@ -985,6 +992,9 @@ footer{
                   }
 
                   @media only screen and (min-width:1400px){
+                    #sliding-title {
+                      height: 10vh;
+                  }
                     
                     .section-title-1{
                       padding-left: 160px;
@@ -1046,16 +1056,16 @@ footer{
                         } */
                       }
                       .section-5{
-                        height:650px;
+                        height: 500px;
                         padding-bottom: 0px;
-                        top: 0px;
+                        top: 64px;
                         .title-5-text{
                           width: 480px;
                           position: relative;
                           right: 19%;
                         }
                         .svg-ipad{
-                          top: -124px;
+                          top: -51px;
                           right: 59px;
                           padding: 10px 0 0 0;
                         }

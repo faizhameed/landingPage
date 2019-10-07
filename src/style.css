@@ -168,8 +168,8 @@ body {
 }
 
 #sliding-title {
-  -webkit-transition: .5s;
-  transition: .5s;
+  height: 5vh;
+  overflow: hidden;
 }
 
 p {
@@ -454,6 +454,7 @@ p {
 }
 
 .btn-cta-container-2 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,11 +824,11 @@ footer > div li {
   }
   .nav-free-trial {
     position: absolute;
-    right: 128px;
+    right: 81px;
   }
   .nav-pricing {
     position: absolute;
-    right: 224px;
+    right: 172px;
   }
   .sub-menu {
     width: 307px;
@@ -905,6 +906,7 @@ footer > div li {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     height: 500px;
+    top: 48px;
   }
   .section-5 .title-5-text {
     text-align: left;
@@ -998,7 +1000,7 @@ footer > div li {
     width: 480px;
   }
   .section-5 {
-    height: 695px;
+    height: 500px;
   }
   .section-5 .title-5-text {
     width: 480px;
@@ -1007,7 +1009,7 @@ footer > div li {
     width: 352px;
     padding-top: 0;
     position: relative;
-    top: -134px;
+    top: -52px;
   }
   .section-6-cards div {
     width: 23%;
@@ -1015,6 +1017,9 @@ footer > div li {
 }
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) {
+  #sliding-title {
+    height: 8vh;
+  }
   .section-title-1 .title-text {
     position: relative;
     top: 38px;
@@ -1081,6 +1086,9 @@ footer > div li {
 }
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) {
+  #sliding-title {
+    height: 10vh;
+  }
   .section-title-1 {
     padding-left: 160px;
   }
@@ -1139,9 +1147,9 @@ footer > div li {
     left: 10%;
   }
   .section-5 {
-    height: 650px;
+    height: 500px;
     padding-bottom: 0px;
-    top: 0px;
+    top: 64px;
   }
   .section-5 .title-5-text {
     width: 480px;
@@ -1149,7 +1157,7 @@ footer > div li {
     right: 19%;
   }
   .section-5 .svg-ipad {
-    top: -124px;
+    top: -51px;
     right: 59px;
     padding: 10px 0 0 0;
   }
