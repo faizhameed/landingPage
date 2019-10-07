@@ -322,29 +322,33 @@ p{
 }
 .btn-cta-container-1{
   display: flex;
-  height: 86px;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
   width: 100%;
-  justify-content: center;
   background-image: linear-gradient(to bottom, #006cff, #0b54b7);
   p{
     margin: auto 0;
     padding-right: 20px;
     font-family: HelveticaNeue;
-    font-size: 22px;
+    font-size: 17px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.23;
     letter-spacing: 0.44px;
     color: #ffffff;
+    text-align: center;
   }
   .cta-btn{
     border: none;
     width: 218px;
     height: 34px;
     border-radius: 6px;
-    margin: auto 0;
     background-color: #ffe18c;
-    padding-left:20px;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
   }
 
 }
@@ -386,21 +390,23 @@ p{
   padding-bottom: 30px;
 }
 .btn-cta-container-2{
-  position: relative;
   display: flex;
-  height: 86px;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
   width: 100%;
-  justify-content: center;
   background-image: linear-gradient(to bottom, #ffe18c, #eabc39);
   p{
     margin: auto 0;
     padding-right: 20px;
     font-family: HelveticaNeue;
-    font-size: 22px;
+    font-size: 17px;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.23;
     letter-spacing: 0.44px;
+    text-align: center;
     color: #006cff;
   }
   .cta-btn{
@@ -408,9 +414,10 @@ p{
     width: 218px;
     height: 34px;
     border-radius: 6px;
-    margin: auto 0;
     background-color: #ffe18c;
-    padding-left:20px;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
   }
 
 }
@@ -454,32 +461,37 @@ p{
   }
   .btn-cta-container-3{
     display: flex;
-    height: 86px;
-    width: 100%;
-    justify-content: center;
-    background: none;
-    border: none;
-    box-shadow: none;
+  flex-direction: column;
+  height: 111px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  background: none;
+  box-shadow:none;
+  position: relative;
+  top: -10px;
     
     p{
       margin: auto 0;
       padding-right: 20px;
       font-family: HelveticaNeue;
-      font-size: 22px;
+      font-size: 17px;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.23;
       letter-spacing: 0.44px;
       color: #000000;
+      text-align: center;
     }
     .cta-btn{
       border: none;
-      width: 218px;
-      height: 34px;
-      border-radius: 6px;
-      margin: auto 0;
-      background-color: #ffe18c;
-      padding-left:20px;
+    width: 218px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #ffe18c;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
     }
   
   }
@@ -638,6 +650,16 @@ footer{
         padding-top: 0px;
       }
     }
+    .btn-cta-container-1,.btn-cta-container-2{
+      flex-direction: row;
+      p{
+        margin: auto;
+      }
+      .cta-btn{
+        margin: auto;
+      }
+    }
+
     .section-4{
       padding: 0 20px 10px;
       .title-4-text{
@@ -677,6 +699,18 @@ footer{
     justify-content: center;
     position: relative;
     top: -5px;
+    padding-bottom: 50px;
+    & .btn-cta-container-3{
+      flex-direction: row;
+      position: absolute;
+      top: 800px;
+      & p{
+        margin: auto;
+      }
+      & .cta-btn{
+        margin: auto;
+      }
+    }
     & div{
       margin: auto 2.5%;
       height: 375px;
@@ -791,6 +825,12 @@ footer{
                   top: -49px;
             }
                 }
+
+                .btn-cta-container-1, .btn-cta-container-2{
+                  p{
+                    font-size: 20px;
+                  }
+                }
                 .section-4 {
                     top: 50px;
                     display: flex;
@@ -803,6 +843,9 @@ footer{
                         width: 475px;
                         padding-top: 0;
                     }
+                }
+                .btn-cta-container-2{
+                  position: relative;
                 }
                 .section-5{
                     display: flex;
@@ -854,8 +897,10 @@ footer{
                     }
                   }
                   .btn-cta-container-3{
-                    top: 925px;
-                    position: absolute;
+                    top: 900px;
+                    p{
+                      font-size: 20px;
+                    }
                   }
                 }
                 @media only screen and (min-width:1200px){
