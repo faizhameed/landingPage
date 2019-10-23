@@ -349,6 +349,10 @@ p{
     padding-left: 20px;
     display: block;
     margin: 0 auto;
+    :hover{
+      border: 2px solid #ffe18c;
+      background-color: transparent;
+    }
   }
 
 }
@@ -418,10 +422,46 @@ p{
     padding-left: 20px;
     display: block;
     margin: 0 auto;
+    :hover{
+      border: 2px solid #ffe18c;
+      background-color: transparent;
+    }
   }
 
 }
-.section-6-cards{
+.section-6{
+  
+  padding: 10px 20px;
+  .title-6-text{
+    padding-top: 50px;
+    h2{
+      font-size: 20px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+}
+.section-7{
+  
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+  .title-7-text{
+    padding-top: 50px;
+  
+    h2{
+      font-size: 20px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+}
+.section-cards{
   background-image:linear-gradient(to bottom, #2700ff, #006cff 53%, #8dbfff);
   position: relative;
   top:0px;
@@ -492,6 +532,10 @@ p{
     padding-left: 20px;
     display: block;
     margin: 0 auto;
+    :hover{
+      border: 2px solid #ffe18c;
+      background-color: transparent;
+    }
     }
   
   }
@@ -544,7 +588,7 @@ footer{
 }
 
   .section-3{
-    height: 900px;
+    height: 800px;
     .svg-ipad{
       width: 84%;
     }
@@ -553,13 +597,27 @@ footer{
   .section-4{
     .svg-ipad{
       width: 85%;
+      padding: 50px 0px;
     }
   }
   .section-5{
-    height: 1100px;
+    height: 770px;
+    .svg-ipad{
+      width: 85%;
+    }
+  }
+  .section-6{
+    .svg-ipad{
+      width: 85%;
+    }
+  }
+  .section-7{
+    .svg-ipad{
+      width: 85%;
+    }
   }
 
-  .section-6-cards{
+  .section-cards{
     & div{
       width: 59%;
     }
@@ -584,15 +642,15 @@ footer{
     }
   }
   .section-3{
-    height: 850px;
+    height: 750px;
     .svg-ipad{
       width:70%;
     }
   }
   .section-5 {
-    height: 1120px;
+    height: 750px;
 }
-.section-6-cards{
+.section-cards{
   height: 2423px;
   & div{
     width: 55%;
@@ -692,7 +750,7 @@ footer{
           margin: 0 auto;
       }
   }
-  .section-6-cards{
+  .section-cards{
     background-image:url("./svg-files/card-svgs/Group\ 269.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -870,7 +928,7 @@ footer{
                     }
                 }
                
-                .section-6-cards{
+                .section-cards{
                   
                   display: flex;
                   height: 1000px;
@@ -961,7 +1019,7 @@ footer{
                       top: -52px;
                     }
                 }
-                .section-6-cards{
+                .section-cards{
                   & div{
                     width:23%;
                   }
@@ -1034,7 +1092,7 @@ footer{
                     padding: 10px 0 0 0;
                   }
                 }
-                  .section-6-cards{
+                  .section-cards{
                     & div{
                       width:21%;
                     }
@@ -1119,7 +1177,7 @@ footer{
                           padding: 10px 0 0 0;
                         }
                       }
-                      .section-6-cards{ 
+                      .section-cards{ 
                         padding: 5% 10%;
                         & div{
                           width:270px;
@@ -1136,7 +1194,7 @@ footer{
                           }
                         }
                        
-                        .section-6-cards{
+                        .section-cards{
                           padding: 5% 17%;
                         }
                       }
