@@ -7,6 +7,10 @@ body, html {
   height: 100%;
 }
 
+a {
+  color: white;
+}
+
 /* Navbar Styling */
 header {
   position: absolute;
@@ -173,7 +177,7 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .corefactors-logo {
@@ -237,7 +241,7 @@ p {
   text-align: center;
   margin: 10px 20px;
   color: #ffffff;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: 30px;
   font-size: 15px;
@@ -340,7 +344,7 @@ p {
 }
 
 p {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .section-3 {
@@ -398,7 +402,7 @@ p {
 .btn-cta-container-1 p {
   margin: auto 0;
   padding-right: 20px;
-  font-family: HelveticaNeue;
+  font-family: "Roboto";
   font-size: 17px;
   font-style: normal;
   font-stretch: normal;
@@ -414,7 +418,7 @@ p {
   height: 34px;
   border-radius: 6px;
   background-color: #ffe18c;
-  padding-left: 20px;
+  /*   padding-left: 20px; */
   display: block;
   margin: 0 auto;
 }
@@ -486,7 +490,7 @@ p {
 .btn-cta-container-2 p {
   margin: auto 0;
   padding-right: 20px;
-  font-family: HelveticaNeue;
+  font-family: "Roboto",sans-serif;
   font-size: 17px;
   font-style: normal;
   font-stretch: normal;
@@ -502,7 +506,6 @@ p {
   height: 34px;
   border-radius: 6px;
   background-color: #ffe18c;
-  padding-left: 20px;
   display: block;
   margin: 0 auto;
 }
@@ -611,20 +614,20 @@ p {
   -webkit-box-shadow: 0 0 12px 0 #d5d5d5;
           box-shadow: 0 0 12px 0 #d5d5d5;
   position: relative;
-  background-color: white;
+  background-color: #003783;
   top: -10px;
 }
 
 .section-cards .btn-cta-container-3 p {
   margin: auto 0;
   padding-right: 20px;
-  font-family: HelveticaNeue;
+  font-family: "Roboto";
   font-size: 17px;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.23;
   letter-spacing: 0.44px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -634,7 +637,6 @@ p {
   height: 34px;
   border-radius: 6px;
   background-color: #ffe18c;
-  padding-left: 20px;
   display: block;
   margin: 0 auto;
 }
@@ -1012,7 +1014,7 @@ footer > div li {
     width: 465px;
   }
   .section-3 .svg-ipad {
-    width: 437px;
+    width: 623px;
     top: -9px;
   }
   .btn-cta-container-1 p, .btn-cta-container-2 p {
@@ -1030,7 +1032,7 @@ footer > div li {
     width: 465px;
   }
   .section-4 .svg-ipad {
-    width: 397px;
+    width: 45%;
     padding-top: 0;
   }
   .btn-cta-container-2 {
@@ -1044,7 +1046,7 @@ footer > div li {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    height: 500px;
+    height: 669px;
     top: 48px;
   }
   .section-5 .title-5-text {
@@ -1055,7 +1057,7 @@ footer > div li {
     width: 465px;
   }
   .section-5 .svg-ipad {
-    width: 403px;
+    width: 553px;
     padding-top: 0;
     position: relative;
     bottom: 39px;
@@ -1068,7 +1070,7 @@ footer > div li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 500px;
+    height: 619px;
     top: 48px;
   }
   .section-6 .title-6-text {
@@ -1077,7 +1079,7 @@ footer > div li {
     width: 465px;
   }
   .section-6 .svg-ipad {
-    width: 403px;
+    width: 500px;
     padding-top: 0;
     position: relative;
     bottom: -17px;
@@ -1090,7 +1092,7 @@ footer > div li {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    height: 500px;
+    height: 619px;
     top: 48px;
   }
   .section-7 .title-7-text {
@@ -1099,7 +1101,7 @@ footer > div li {
     width: 465px;
   }
   .section-7 .svg-ipad {
-    width: 403px;
+    width: 553px;
     padding-top: 0;
     position: relative;
     bottom: -39px;
@@ -1171,7 +1173,7 @@ footer > div li {
     margin: 0 auto;
   }
   .section-2-text-image .svg-ipad {
-    width: 523px;
+    width: 50%;
     top: 0;
     left: 0px;
     position: relative;
@@ -1184,28 +1186,28 @@ footer > div li {
     margin: 0 auto;
   }
   .section-3 .svg-ipad {
-    top: 0;
+    top: 49px;
   }
   .section-4 .title-4-text {
     width: 480px;
     margin: 0 auto;
-  }
-  .section-5 {
-    height: 500px;
   }
   .section-5 .title-5-text {
     width: 480px;
     margin: 0 auto;
   }
   .section-6 {
-    height: 500px;
+    height: 619px;
   }
   .section-6 .title-6-text {
     width: 480px;
     margin: 0 auto;
   }
+  .section-6 .svg-ipad {
+    width: 525px;
+  }
   .section-7 {
-    height: 500px;
+    height: 619px;
   }
   .section-7 .title-7-text {
     width: 480px;
@@ -1265,10 +1267,10 @@ footer > div li {
     left: 10%;
   }
   .section-4 .svg-ipad {
-    width: 500px;
+    width: 42%;
+    left: 15px;
   }
   .section-5 {
-    height: 510px;
     padding-bottom: 0px;
   }
   .section-5 .title-5-text {
@@ -1278,6 +1280,10 @@ footer > div li {
   }
   .section-5 .svg-ipad {
     padding: 10px 0 0 0;
+  }
+  .section-7 .svg-ipad {
+    width: 50%;
+    left: 1%;
   }
   .section-cards div {
     width: 21%;
@@ -1330,6 +1336,10 @@ footer > div li {
     position: relative;
     right: 10%;
   }
+  .section-3 .svg-ipad {
+    width: 40%;
+    top: 0;
+  }
   .section-4 {
     padding-bottom: 0px;
     /* .svg-ipad{
@@ -1346,33 +1356,33 @@ footer > div li {
     left: 10%;
   }
   .section-5 {
-    height: 500px;
     padding-bottom: 0px;
     top: 64px;
   }
   .section-5 .title-5-text {
     width: 480px;
     position: relative;
-    right: 8%;
+    right: 4%;
   }
   .section-5 .svg-ipad {
     top: -51px;
+    width: 42%;
     left: 7%;
     padding: 10px 0 0 0;
   }
   .section-6 .title-6-text {
-    left: 6%;
+    left: 3%;
     position: relative;
   }
   .section-6 .svg-ipad {
-    right: 12%;
+    right: 2%;
+    width: 45%;
   }
   .section-7 .title-7-text {
-    right: 10%;
     position: relative;
   }
   .section-7 .svg-ipad {
-    left: 9%;
+    left: 1%;
   }
   .section-cards {
     padding: 5% 10%;
@@ -1389,7 +1399,7 @@ footer > div li {
 
 @media only screen and (min-width: 500px) and (min-width: 600px) and (min-width: 750px) and (min-width: 800px) and (min-width: 992px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) and (min-width: 1650px) {
   .section-2-text-image .svg-ipad {
-    width: 32%;
+    width: 43%;
   }
   .section-3 .svg-ipad {
     left: 9%;
@@ -1397,6 +1407,9 @@ footer > div li {
   .section-4 .svg-ipad {
     right: 8%;
     position: relative;
+  }
+  .section-7 .title-7-text {
+    right: 10%;
   }
   .section-cards {
     padding: 5% 17%;
