@@ -2,6 +2,9 @@
 
 body, html { height:100%; }
 
+a{
+  color: white;
+}
 
 /* Navbar Styling */
 header{
@@ -148,7 +151,7 @@ body{
   height: 25px;
   overflow: hidden;
 }
-p{font-size: 14px;}
+p{font-size: 16px;}
 
 .corefactors-logo{
   width: auto;
@@ -200,7 +203,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   text-align: center;
   margin: 10px 20px;
   color: #ffffff;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: 30px;
   font-size: 15px;
@@ -286,7 +289,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
 
 }
 p{
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .section-3{
   height: 856px;
@@ -331,7 +334,7 @@ p{
   p{
     margin: auto 0;
     padding-right: 20px;
-    font-family: HelveticaNeue;
+    font-family: "Roboto";
     font-size: 17px;
     font-style: normal;
     font-stretch: normal;
@@ -346,7 +349,7 @@ p{
     height: 34px;
     border-radius: 6px;
     background-color: #ffe18c;
-    padding-left: 20px;
+  /*   padding-left: 20px; */
     display: block;
     margin: 0 auto;
     :hover{
@@ -407,7 +410,7 @@ p{
   p{
     margin: auto 0;
     padding-right: 20px;
-    font-family: HelveticaNeue;
+    font-family: "Roboto",sans-serif;
     font-size: 17px;
     font-style: normal;
     font-stretch: normal;
@@ -422,7 +425,6 @@ p{
     height: 34px;
     border-radius: 6px;
     background-color: #ffe18c;
-    padding-left: 20px;
     display: block;
     margin: 0 auto;
     :hover{
@@ -512,19 +514,19 @@ p{
   background: none;
   box-shadow: 0 0 12px 0 #d5d5d5;
   position: relative;
-  background-color:white;
+  background-color:#003783;
   top: -10px;
     
     p{
       margin: auto 0;
       padding-right: 20px;
-      font-family: HelveticaNeue;
+      font-family: "Roboto";
       font-size: 17px;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.23;
       letter-spacing: 0.44px;
-      color: #000000;
+      color: #ffffff;
       text-align: center;
     }
     .cta-btn{
@@ -533,7 +535,7 @@ p{
     height: 34px;
     border-radius: 6px;
     background-color: #ffe18c;
-    padding-left: 20px;
+ 
     display: block;
     margin: 0 auto;
     :hover{
@@ -920,7 +922,7 @@ footer{
                   width: 465px;
                 }
                 & .svg-ipad {
-                  width: 437px;
+                  width: 623px;
                   top: -9px;
             }
                 }
@@ -939,7 +941,7 @@ footer{
                         width: 465px;
                     }
                     & .svg-ipad {
-                        width:397px;
+                      width:45%;
                         padding-top: 0;
                     }
                 }
@@ -950,7 +952,7 @@ footer{
                   
                     display: flex;
                     flex-direction: row-reverse;
-                    height: 500px;
+                    height: 669px;
                     top: 48px;
                     .title-5-text{
                       top: 50px;
@@ -960,7 +962,7 @@ footer{
                         width: 465px;
                     }
                     & .svg-ipad {
-                      width: 403px;
+                      width: 553px;
                       padding-top: 0;
                       position: relative;
                       bottom: 39px;
@@ -970,7 +972,7 @@ footer{
                 .section-6{
                   display: flex;
                     flex-direction: row;
-                    height: 500px;
+                    height: 619px;
                     top: 48px;
                     .title-6-text{
                         text-align: left;
@@ -978,7 +980,7 @@ footer{
                         width: 465px;
                     }
                     & .svg-ipad {
-                      width: 403px;
+                      width: 500px;
                       padding-top: 0;
                       position: relative;
                       bottom: -17px;
@@ -988,7 +990,7 @@ footer{
                 .section-7{
                   display: flex;
                   flex-direction: row-reverse;
-                  height: 500px;
+                  height: 619px;
                   top: 48px;
                   .title-7-text{
                       text-align: left;
@@ -996,7 +998,7 @@ footer{
                       width: 465px;
                   }
                   & .svg-ipad {
-                    width: 403px;
+                    width: 553px;
                     padding-top: 0;
                     position: relative;
                     bottom: -39px;
@@ -1065,7 +1067,7 @@ footer{
                     margin: 0 auto;
                   }
                     .svg-ipad{
-                      width: 523px;
+                      width: 50%;
                       top: 0;
                       left: 0px;
                       position: relative; 
@@ -1078,7 +1080,7 @@ footer{
                       margin: 0 auto;
                     }
                     .svg-ipad{
-                      top:0
+                      top: 49px;
                     }
                 }
                 .section-4{
@@ -1088,7 +1090,7 @@ footer{
                   }
                 }
                 .section-5{
-                    height: 500px;
+                  
                     .title-5-text{
                       width: 480px;
                       margin: 0 auto;
@@ -1096,14 +1098,17 @@ footer{
                    
                 }
                 .section-6{
-                  height: 500px;
+                  height: 619px;
                   .title-6-text{
                     width: 480px;
                     margin: 0 auto;
                   }
+                  .svg-ipad{
+                    width: 525px;
+                  }
               }
               .section-7{
-                height: 500px;
+                height: 619px;
                 .title-7-text{
                   width: 480px;
                   margin: 0 auto;
@@ -1166,11 +1171,12 @@ footer{
                     left: 10%;
                   }
                   .svg-ipad{
-                    width: 500px;
+                    width: 42%;
+                    left: 15px;
                   }
                 }
                 .section-5{
-                  height: 510px;
+                  
                   padding-bottom:0px;
                   .title-5-text{
                     width: 480px;
@@ -1179,6 +1185,12 @@ footer{
                   }
                   .svg-ipad{
                     padding: 10px 0 0 0;
+                  }
+                }
+                .section-7{
+                  .svg-ipad{
+                    width: 50%;
+                    left:1%;
                   }
                 }
                   .section-cards{
@@ -1234,6 +1246,10 @@ footer{
                           position: relative;
                           right: 10%;
                         }
+                        .svg-ipad{
+                          width: 40%;
+                          top: 0;
+                        }
                         
                       }
                       .section-4{
@@ -1252,16 +1268,17 @@ footer{
                         } */
                       }
                       .section-5{
-                        height: 500px;
+                       
                         padding-bottom: 0px;
                         top: 64px;
                         .title-5-text{
                           width: 480px;
                           position: relative;
-                          right: 8%;
+                          right: 4%;
                         }
                         .svg-ipad{
                           top: -51px;
+                          width:42%;
                           left: 7%;
                           padding: 10px 0 0 0;
                         }
@@ -1269,21 +1286,22 @@ footer{
 
                       .section-6{
                         .title-6-text{
-                          left: 6%;
+                          left: 3%;
                           position: relative;
 
                         }
                         .svg-ipad{
-                          right: 12%;
+                          right: 2%;
+                          width: 45%;
                         }
                       }
                       .section-7{
                         .title-7-text{
-                          right: 10%;
+                          
                         position: relative;
                         }
                         .svg-ipad{
-                          left: 9%;
+                          left: 1%;
                         }
                       }
                       .section-cards{ 
@@ -1300,7 +1318,7 @@ footer{
                       @media only screen and (min-width:1650px){
                         .section-2-text-image{
                           .svg-ipad{
-                            width: 32%
+                            width: 43%
                           }
                         }
                        .section-3{
@@ -1312,6 +1330,11 @@ footer{
                          .svg-ipad{
                           right: 8%;
                           position: relative;
+                         }
+                       }
+                       .section-7{
+                         .title-7-text{
+                          right: 10%;
                          }
                        }
                         .section-cards{
