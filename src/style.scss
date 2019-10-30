@@ -12,10 +12,7 @@ header{
   z-index:2;
   width: 100%;
 }
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url(./fonts/HelveticaNeueLt.ttf) format("truetype");
-}
+
 .navbar {
   background-color: #000000;
 }
@@ -153,6 +150,9 @@ body{
 }
 p{font-size: 16px;}
 
+h2{
+  line-height: 1.8em;
+}
 .corefactors-logo{
   width: auto;
   height: 30px;
@@ -168,7 +168,7 @@ top: 57px;
 width: 100%;
 height: 581px;
 opacity: 0.99;
-background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+background-color: #0093DD;
 }
 
 .sub-menu{
@@ -203,17 +203,18 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   text-align: center;
   margin: 10px 20px;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
   position: relative;
   top: 30px;
   font-size: 15px;
+  line-height: 1.7em;
   text-align: justify;
 }
 .title-1-btn{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 120px;
+  top: 75px;
   align-items: center;
 }
 .title-1-btn button{
@@ -253,6 +254,7 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   .section-2-text{
     p{
       text-align: justify;
+      line-height: 1.8em;
     }
   }
 }
@@ -261,9 +263,9 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.23;
+
   letter-spacing: 0.18px;
-  color: #484848;
+  color: #222222;
   text-align: center;
   padding-top: 50px;
  .underline{
@@ -272,15 +274,16 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
    background-color: #779cff;
    margin:10px auto;
  }
+
+ 
 }
 .section-2-subtitle{
   font-size: 24px;
   font-weight: bold; 
   font-style: normal;  
-  font-stretch: normal;  
-  line-height: 1.21;  
+  font-stretch: normal;   
   letter-spacing: 0.17px;   
-  color: #484848;
+  color: #222222;
 }
 .svg-ipad{
   width: 100%;
@@ -289,17 +292,18 @@ background-image: linear-gradient(to bottom, #779cff, #90e5ff);
 
 }
 p{
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .section-3{
   height: 856px;
-  background-image: linear-gradient(to bottom, #CADAFD, #c4edfa);
+  background-color: #0093DD;
   opacity:1;
   text-align: center;
   padding: 40px 20px 10px;
   .title-3-text{
     p{
       text-align: justify;
+      color: white;
     }
   }
   .svg-ipad {
@@ -310,13 +314,17 @@ p{
     top:39px;
 }
 }
-.title-3-text .title{
+.title-3-text {
+.title{
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.21;
   letter-spacing: 0.17px;
-  color: #484848;
+  color: #222222;
   padding-bottom: 30px;
+}
+p{
+  line-height: 1.8em;
+}
 }
 .svg-ipad{
   width: 100%;
@@ -334,7 +342,7 @@ p{
   p{
     margin: auto 0;
     padding-right: 20px;
-    font-family: "Roboto";
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-stretch: normal;
@@ -343,7 +351,7 @@ p{
     color: #ffffff;
     text-align: center;
   }
-  .cta-btn{
+  .cta-btn{ 
     border: none;
     width: 218px;
     height: 34px;
@@ -373,6 +381,7 @@ p{
     p{
       text-align: justify;
       padding-bottom: 0px;
+      line-height: 1.8em;
     }
   }
   .svg-ipad{
@@ -384,7 +393,7 @@ p{
   position: relative;
   top: 0px;
   height: 810px;
-  background-color: #f4f4f4;
+  background-color: #0093DD;
   text-align: center;
   padding: 10px 20px;
 }
@@ -392,6 +401,8 @@ p{
   padding-top: 50px;
   p{
     text-align: justify;
+    line-height: 1.8em;
+    color: white;
   }
 }
 
@@ -410,7 +421,7 @@ p{
   p{
     margin: auto 0;
     padding-right: 20px;
-    font-family: "Roboto",sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-stretch: normal;
@@ -446,13 +457,14 @@ p{
     }
     p{
       text-align: justify;
+      line-height: 1.8em;
     }
   }
 }
 .section-7{
   
   padding: 10px 20px;
-  background-image: linear-gradient(to bottom, #779cff, #90e5ff);
+  background-color: #0093DD;
   .title-7-text{
     padding-top: 50px;
   
@@ -463,6 +475,8 @@ p{
     }
     p{
       text-align: justify;
+      line-height: 1.8em;
+      color: white;
     }
   }
 }
@@ -501,7 +515,7 @@ p{
       font-size: 12px;
       text-align: justify;
       word-spacing: -1px;
-    
+      line-height: 1.71em;
     }
   }
   .btn-cta-container-3{
@@ -520,7 +534,7 @@ p{
     p{
       margin: auto 0;
       padding-right: 20px;
-      font-family: "Roboto";
+      font-family: 'Lato', sans-serif;
       font-size: 17px;
       font-style: normal;
       font-stretch: normal;
@@ -718,7 +732,7 @@ footer{
         font-size: 21px;
         line-height: 1.24;
         letter-spacing: 0.13px;
-        color: #484848;
+        color: #222222;
       }
       .section-2-subtitle {
         line-height: 3.21;
@@ -891,9 +905,10 @@ footer{
                     padding: 10px 50px;
                     display: flex;
                     .section-2-text{
-                            text-align: right;
                             margin-left: 25px;
                             width: 465px;
+                            top: 46px;
+                            position: relative;
                         & > .section-2-subtitle{
                             line-height: 1.21;
                             padding-bottom: 20px;
@@ -915,15 +930,18 @@ footer{
                 height: 550px;
                 flex-direction: row-reverse;
                 .title-3-text{
-                  top: 50px;
+                  top: 81px;
+                  right: 63px;
+                  position: relative;width: 480px;
+                  /* margin: 0 auto; */
+                  /* left: 0px; */
                   position: relative;
-                  text-align: left;
                   margin-right: 25px;
                   width: 465px;
                 }
                 & .svg-ipad {
                   width: 623px;
-                  top: -9px;
+                  top: 23px;
             }
                 }
 
@@ -936,13 +954,18 @@ footer{
                     top: 50px;
                     display: flex;
                     .title-4-text{
-                        text-align: right;
                         margin-left: 25px;
                         width: 465px;
+                        position:relative;
+                        top: 20px;
                     }
                     & .svg-ipad {
-                      width:45%;
-                        padding-top: 0;
+                        width:45%;
+                        width: 480px;
+                        padding-top: 10px;
+                        /* margin: 0 auto; */
+                        /* left: 0px; */
+                        position: relative;
                     }
                 }
                 .btn-cta-container-2{
@@ -955,9 +978,8 @@ footer{
                     height: 669px;
                     top: 48px;
                     .title-5-text{
-                      top: 50px;
+                      top: 85px;
                       position: relative;
-                        text-align: left;
                         margin-right: 25px;
                         width: 465px;
                     }
@@ -972,18 +994,20 @@ footer{
                 .section-6{
                   display: flex;
                     flex-direction: row;
-                    height: 619px;
+                    height: 525px;
                     top: 48px;
                     .title-6-text{
                         text-align: left;
                         margin-right: 25px;
                         width: 465px;
+                        position: relative;
+                        top: 50px;
                     }
                     & .svg-ipad {
                       width: 500px;
                       padding-top: 0;
                       position: relative;
-                      bottom: -17px;
+                      top: 27px;
                   
                     }
                 }
@@ -996,6 +1020,9 @@ footer{
                       text-align: left;
                       margin-right: 25px;
                       width: 465px;
+                      position: relative;
+                      top: 50px;
+                      left: 10px;
                   }
                   & .svg-ipad {
                     width: 553px;
@@ -1065,6 +1092,9 @@ footer{
                   .section-2-text{
                     width: 480px;
                     margin: 0 auto;
+                    position: relative;
+                  left: 25px;
+                  top: 100px;
                   }
                     .svg-ipad{
                       width: 50%;
@@ -1074,10 +1104,12 @@ footer{
                     }
                 }
                 .section-3{
-                  height: 479px;
+                  height: 580px;
                     .title-3-text{
                       width: 480px;
-                      margin: 0 auto;
+                      right: 69px;
+                      top: 150px;
+                      position: relative;
                     }
                     .svg-ipad{
                       top: 49px;
@@ -1108,10 +1140,14 @@ footer{
                   }
               }
               .section-7{
-                height: 619px;
+                height:560px;
                 .title-7-text{
                   width: 480px;
                   margin: 0 auto;
+                  top: 80px;
+                }
+                .svg-ipad{
+                  top: 72px;
                 }
             }
                 .section-cards{
@@ -1150,7 +1186,7 @@ footer{
                     .section-2-text{
                         width: 480px;
                         position: relative;
-                        left: 10%;
+                        left: 5%;
                     }
                 }
                 .section-3{
@@ -1168,7 +1204,7 @@ footer{
                   .title-4-text{
                     width: 480px;
                     position: relative;
-                    left: 10%;
+                    left: 5%;
                   }
                   .svg-ipad{
                     width: 42%;
@@ -1181,10 +1217,16 @@ footer{
                   .title-5-text{
                     width: 480px;
                     position: relative;
-                    right: 10%;
+                    right: 5%;
                   }
                   .svg-ipad{
                     padding: 10px 0 0 0;
+                  }
+                }
+
+                .section-6{
+                  .title-6-text{
+                    left: 5%;
                   }
                 }
                 .section-7{
@@ -1233,8 +1275,6 @@ footer{
                           padding-bottom:0px;
                           .section-2-text{
                               width: 480px;
-                              position: relative;
-                              left: 10%;
                           }
                           
                       }
@@ -1244,11 +1284,11 @@ footer{
                         .title-3-text{
                           width: 480px;
                           position: relative;
-                          right: 10%;
+                          right: 13%;
                         }
                         .svg-ipad{
-                          width: 40%;
-                          top: 0;
+        
+                          top: 20px;
                         }
                         
                       }
@@ -1257,7 +1297,7 @@ footer{
                         .title-4-text{
                           width: 480px;
                           position: relative;
-                          left: 10%;
+                          top: 50px;
                         }
                         /* .svg-ipad{
                           margin: 0;
@@ -1279,7 +1319,7 @@ footer{
                         .svg-ipad{
                           top: -51px;
                           width:42%;
-                          left: 7%;
+                          left: 4%;
                           padding: 10px 0 0 0;
                         }
                       }
@@ -1287,6 +1327,7 @@ footer{
                       .section-6{
                         .title-6-text{
                           left: 3%;
+                          top:100px;
                           position: relative;
 
                         }
@@ -1322,8 +1363,12 @@ footer{
                           }
                         }
                        .section-3{
+                         .title-3-text{
+                           right: 16%;
+                         }
                          .svg-ipad{
-                           left: 9%;
+                          left: auto;
+                          right: 5%;
                          }
                        }
                        .section-4{
@@ -1334,7 +1379,8 @@ footer{
                        }
                        .section-7{
                          .title-7-text{
-                          right: 10%;
+                          right: 6%;
+                           left: auto;
                          }
                        }
                         .section-cards{
