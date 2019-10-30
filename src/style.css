@@ -530,12 +530,12 @@ p {
 
 .section-6 .title-6-text {
   padding-top: 50px;
+  text-align: center;
 }
 
 .section-6 .title-6-text h2 {
   font-size: 20px;
   padding-bottom: 30px;
-  text-align: center;
 }
 
 .section-6 .title-6-text p {
@@ -550,12 +550,12 @@ p {
 
 .section-7 .title-7-text {
   padding-top: 50px;
+  text-align: center;
 }
 
 .section-7 .title-7-text h2 {
   font-size: 20px;
   padding-bottom: 30px;
-  text-align: center;
 }
 
 .section-7 .title-7-text p {
@@ -999,6 +999,7 @@ footer > div li {
   }
   .section-2-text-image .section-2-text > .section-2-subtitle {
     line-height: 1.21;
+    text-align: right;
     padding-bottom: 20px;
   }
   .section-2-text-image .svg-ipad {
@@ -1026,6 +1027,7 @@ footer > div li {
     width: 480px;
     /* margin: 0 auto; */
     /* left: 0px; */
+    text-align: left;
     position: relative;
     margin-right: 25px;
     width: 465px;
@@ -1048,6 +1050,7 @@ footer > div li {
     width: 465px;
     position: relative;
     top: 20px;
+    text-align: right;
   }
   .section-4 .svg-ipad {
     width: 45%;
@@ -1075,6 +1078,7 @@ footer > div li {
   .section-5 .title-5-text {
     top: 85px;
     position: relative;
+    text-align: left;
     margin-right: 25px;
     width: 465px;
   }
@@ -1096,7 +1100,7 @@ footer > div li {
     top: 48px;
   }
   .section-6 .title-6-text {
-    text-align: left;
+    text-align: right;
     margin-right: 25px;
     width: 465px;
     position: relative;

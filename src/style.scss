@@ -455,10 +455,10 @@ p{
   padding: 10px 20px;
   .title-6-text{
     padding-top: 50px;
+    text-align: center;
     h2{
       font-size: 20px;
       padding-bottom: 30px;
-      text-align: center;
     }
     p{
       text-align: justify;
@@ -472,11 +472,11 @@ p{
   background-color: #0093DD;
   .title-7-text{
     padding-top: 50px;
-  
+    text-align: center;
     h2{
       font-size: 20px;
       padding-bottom: 30px;
-      text-align: center;
+     
     }
     p{
       text-align: justify;
@@ -916,6 +916,7 @@ footer{
                             position: relative;
                         & > .section-2-subtitle{
                             line-height: 1.21;
+                            text-align: right;
                             padding-bottom: 20px;
                     }
                     }
@@ -937,9 +938,11 @@ footer{
                 .title-3-text{
                   top: 81px;
                   right: 63px;
-                  position: relative;width: 480px;
+                  position: relative;
+                  width: 480px;
                   /* margin: 0 auto; */
                   /* left: 0px; */
+                  text-align: left;
                   position: relative;
                   margin-right: 25px;
                   width: 465px;
@@ -963,6 +966,7 @@ footer{
                         width: 465px;
                         position:relative;
                         top: 20px;
+                        text-align: right;
                     }
                     & .svg-ipad {
                         width:45%;
@@ -986,6 +990,7 @@ footer{
                     .title-5-text{
                       top: 85px;
                       position: relative;
+                      text-align: left;
                         margin-right: 25px;
                         width: 465px;
                     }
@@ -1003,7 +1008,7 @@ footer{
                     height: 525px;
                     top: 48px;
                     .title-6-text{
-                        text-align: left;
+                        text-align: right;
                         margin-right: 25px;
                         width: 465px;
                         position: relative;
