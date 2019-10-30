@@ -396,6 +396,10 @@ p{
   background-color: #0093DD;
   text-align: center;
   padding: 10px 20px;
+  .svg-ipad{
+    top: -38px;
+    position: relative;
+  }
 }
 .title-5-text{
   padding-top: 50px;
@@ -404,6 +408,7 @@ p{
     line-height: 1.8em;
     color: white;
   }
+
 }
 
 .title-5-text h2{
@@ -515,7 +520,7 @@ p{
       font-size: 12px;
       text-align: justify;
       word-spacing: -1px;
-      line-height: 1.71em;
+      line-height: 1.51em;
     }
   }
   .btn-cta-container-3{
@@ -577,7 +582,7 @@ footer{
   &>div{
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 226px;
     text-align: center;
     h1{
       font-size: 16px;
@@ -754,10 +759,10 @@ footer{
     .btn-cta-container-1,.btn-cta-container-2{
       flex-direction: row;
       p{
-        margin: auto;
+        margin: auto 0 auto auto;
       }
       .cta-btn{
-        margin: auto;
+        margin: auto auto auto 0;
       }
     }
 
@@ -818,10 +823,10 @@ footer{
       height: 80px;
       width:85%;
       & p{
-        margin: auto;
+        margin: auto 0 auto auto;
       }
       & .cta-btn{
-        margin: auto;
+        margin: auto auto auto 0;
       }
     }
     & div{
@@ -968,8 +973,9 @@ footer{
                         position: relative;
                     }
                 }
-                .btn-cta-container-2{
+                .btn-cta-container-1{
                   position: relative;
+                  top: 50px;
                 }
                 .section-5{
                   
@@ -1197,6 +1203,9 @@ footer{
                     position: relative;
                     right: 10%;
                   }
+                  .svg-ipad{
+                    width: 626px;
+                  }
                   
                 }
                 .section-4{
@@ -1287,7 +1296,7 @@ footer{
                           right: 13%;
                         }
                         .svg-ipad{
-        
+                          width: 710px;
                           top: 20px;
                         }
                         
@@ -1306,6 +1315,9 @@ footer{
                           left: 100px;
                           padding: 10px 0 0 0;
                         } */
+                      }
+                      .btn-cta-container-1{
+                        top: 65px;
                       }
                       .section-5{
                        
@@ -1326,14 +1338,15 @@ footer{
 
                       .section-6{
                         .title-6-text{
-                          left: 3%;
+                          left: 6%;
                           top:100px;
                           position: relative;
 
                         }
                         .svg-ipad{
                           right: 2%;
-                          width: 45%;
+                          width: 600px;
+                          top: 50px;
                         }
                       }
                       .section-7{
@@ -1364,10 +1377,11 @@ footer{
                         }
                        .section-3{
                          .title-3-text{
-                           right: 16%;
+                           right: 10%;
                          }
                          .svg-ipad{
                           left: auto;
+                          width: 801px;
                           right: 5%;
                          }
                        }
