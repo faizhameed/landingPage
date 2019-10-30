@@ -6,6 +6,17 @@ a{
   color: white;
 }
 
+input[type="button"]{
+  outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+button:focus {outline:0;}
+
 /* Navbar Styling */
 header{
   position: absolute;
@@ -305,6 +316,9 @@ p{
       text-align: justify;
       color: white;
     }
+    h2{
+      color:white;
+    }
   }
   .svg-ipad {
     width: 100%;
@@ -325,6 +339,7 @@ p{
 p{
   line-height: 1.8em;
 }
+
 }
 .svg-ipad{
   width: 100%;
@@ -392,7 +407,7 @@ p{
 .section-5{
   position: relative;
   top: 0px;
-  height: 810px;
+  height: 877px;
   background-color: #0093DD;
   text-align: center;
   padding: 10px 20px;
@@ -407,6 +422,9 @@ p{
     text-align: justify;
     line-height: 1.8em;
     color: white;
+  }
+  h2{
+    color:white;
   }
 
 }
@@ -476,6 +494,7 @@ p{
     h2{
       font-size: 20px;
       padding-bottom: 30px;
+      color: white;
      
     }
     p{
@@ -572,7 +591,8 @@ p{
   top:0px;
 }
 
-footer{
+#footer{
+  display:none;
   position: relative;
   height: 600px;
   top: 49px;
@@ -595,6 +615,35 @@ footer{
     
   }
   
+}
+
+#accordion-footer-mobile{
+  display:block;
+  .card-header{
+    height: 35px;
+    .mb-0{
+      position: relative;
+    top: -24px;
+    }
+  }
+
+  .card{
+    background-color: black;
+    position: relative;
+    top: 56px;
+    border-radius: 0;
+    text-align: center;
+    .card-body{
+      ul li{
+        color:white;
+        list-style-type: none;
+      }
+    }
+  }
+  .btn{
+    color:white;
+    border: none;
+  }
 }
 @media only screen and (min-width:500px){
 .section-title-1{
@@ -710,6 +759,7 @@ footer{
       }
       .title-para {
         width: 614px;
+        text-align: justify;
     }
       .title-text {
         position: relative;
@@ -734,7 +784,7 @@ footer{
      }
       }
       .section-2-title{
-        font-size: 21px;
+        font-size: 28px;
         line-height: 1.24;
         letter-spacing: 0.13px;
         color: #222222;
@@ -857,7 +907,7 @@ footer{
       }
     }
   }
-  footer{
+  #footer{
     display: flex;
     justify-content: space-around;
     height: 210px;
@@ -874,6 +924,10 @@ footer{
       }
     }
   }
+  #accordion-footer-mobile{
+    display:none;
+  }
+
   @media only screen and (min-width:800px){
     .section-5 {
       .svg-ipad{
@@ -909,6 +963,9 @@ footer{
                 .section-2-text-image{
                     padding: 10px 50px;
                     display: flex;
+                    h2{
+                      font-size:28px;
+                    }
                     .section-2-text{
                             margin-left: 25px;
                             width: 465px;
@@ -946,6 +1003,9 @@ footer{
                   position: relative;
                   margin-right: 25px;
                   width: 465px;
+                  h2{
+                    font-size: 28px;
+                  }
                 }
                 & .svg-ipad {
                   width: 623px;
@@ -967,6 +1027,9 @@ footer{
                         position:relative;
                         top: 20px;
                         text-align: right;
+                        h2{
+                          font-size: 28px;
+                        }
                     }
                     & .svg-ipad {
                         width:45%;
@@ -993,6 +1056,9 @@ footer{
                       text-align: left;
                         margin-right: 25px;
                         width: 465px;
+                        h2{
+                          font-size: 28px;
+                        }
                     }
                     & .svg-ipad {
                       width: 553px;
@@ -1013,6 +1079,9 @@ footer{
                         width: 465px;
                         position: relative;
                         top: 50px;
+                        h2{
+                          font-size: 28px;
+                        }
                     }
                     & .svg-ipad {
                       width: 500px;
@@ -1034,6 +1103,9 @@ footer{
                       position: relative;
                       top: 50px;
                       left: 10px;
+                      h2{
+                        font-size: 28px;
+                      }
                   }
                   & .svg-ipad {
                     width: 553px;
@@ -1251,9 +1323,15 @@ footer{
                 }
                   .section-cards{
                     & div{
-                      width:21%;
-                    }
-                  }
+                      width:270px;
+                      margin: 40px;
+                      height: 331px;
+                      p{
+                        letter-spacing: 0.09px;
+                      }
+                      
+                      }
+                                      }
 
                   @media only screen and (min-width:1400px){
                     #sliding-title {
@@ -1417,3 +1495,6 @@ footer{
         }
     }
 }
+
+// testing accordion
+

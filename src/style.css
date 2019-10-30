@@ -11,6 +11,18 @@ a {
   color: white;
 }
 
+input[type="button"] {
+  outline: none;
+}
+
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
 /* Navbar Styling */
 header {
   position: absolute;
@@ -358,6 +370,10 @@ p {
   color: white;
 }
 
+.section-3 .title-3-text h2 {
+  color: white;
+}
+
 .section-3 .svg-ipad {
   width: 100%;
   display: block;
@@ -454,7 +470,7 @@ p {
 .section-5 {
   position: relative;
   top: 0px;
-  height: 810px;
+  height: 877px;
   background-color: #0093DD;
   text-align: center;
   padding: 10px 20px;
@@ -472,6 +488,10 @@ p {
 .title-5-text p {
   text-align: justify;
   line-height: 1.8em;
+  color: white;
+}
+
+.title-5-text h2 {
   color: white;
 }
 
@@ -556,6 +576,7 @@ p {
 .section-7 .title-7-text h2 {
   font-size: 20px;
   padding-bottom: 30px;
+  color: white;
 }
 
 .section-7 .title-7-text p {
@@ -665,7 +686,8 @@ p {
   top: 0px;
 }
 
-footer {
+#footer {
+  display: none;
   position: relative;
   height: 600px;
   top: 49px;
@@ -674,21 +696,52 @@ footer {
   padding: 20px 0;
 }
 
-footer > div {
+#footer > div {
   display: block;
   margin: 0 auto;
   width: 226px;
   text-align: center;
 }
 
-footer > div h1 {
+#footer > div h1 {
   font-size: 16px;
 }
 
-footer > div li {
+#footer > div li {
   list-style-type: none;
   font-size: 14px;
   line-height: 2;
+}
+
+#accordion-footer-mobile {
+  display: block;
+}
+
+#accordion-footer-mobile .card-header {
+  height: 35px;
+}
+
+#accordion-footer-mobile .card-header .mb-0 {
+  position: relative;
+  top: -24px;
+}
+
+#accordion-footer-mobile .card {
+  background-color: black;
+  position: relative;
+  top: 56px;
+  border-radius: 0;
+  text-align: center;
+}
+
+#accordion-footer-mobile .card .card-body ul li {
+  color: white;
+  list-style-type: none;
+}
+
+#accordion-footer-mobile .btn {
+  color: white;
+  border: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -784,6 +837,7 @@ footer > div li {
   }
   .title-para {
     width: 614px;
+    text-align: justify;
   }
   .title-text {
     position: relative;
@@ -810,7 +864,7 @@ footer > div li {
     padding-bottom: 0;
   }
   .section-2 .section-2-title {
-    font-size: 21px;
+    font-size: 28px;
     line-height: 1.24;
     letter-spacing: 0.13px;
     color: #222222;
@@ -934,7 +988,7 @@ footer > div li {
     font-size: 1.6vw;
     text-align: justify;
   }
-  footer {
+  #footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,16 +997,19 @@ footer > div li {
     height: 210px;
     padding: 10px 10px 0px 30px;
   }
-  footer .footer-menu-3 {
+  #footer .footer-menu-3 {
     position: relative;
     bottom: 27px;
   }
-  footer > div {
+  #footer > div {
     margin: auto 0;
     text-align: left;
   }
-  footer > div h1 {
+  #footer > div h1 {
     padding-bottom: 20px;
+  }
+  #accordion-footer-mobile {
+    display: none;
   }
 }
 
@@ -990,6 +1047,9 @@ footer > div li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .section-2-text-image h2 {
+    font-size: 28px;
   }
   .section-2-text-image .section-2-text {
     margin-left: 25px;
@@ -1032,6 +1092,9 @@ footer > div li {
     margin-right: 25px;
     width: 465px;
   }
+  .section-3 .title-3-text h2 {
+    font-size: 28px;
+  }
   .section-3 .svg-ipad {
     width: 623px;
     top: 23px;
@@ -1051,6 +1114,9 @@ footer > div li {
     position: relative;
     top: 20px;
     text-align: right;
+  }
+  .section-4 .title-4-text h2 {
+    font-size: 28px;
   }
   .section-4 .svg-ipad {
     width: 45%;
@@ -1082,6 +1148,9 @@ footer > div li {
     margin-right: 25px;
     width: 465px;
   }
+  .section-5 .title-5-text h2 {
+    font-size: 28px;
+  }
   .section-5 .svg-ipad {
     width: 553px;
     padding-top: 0;
@@ -1105,6 +1174,9 @@ footer > div li {
     width: 465px;
     position: relative;
     top: 50px;
+  }
+  .section-6 .title-6-text h2 {
+    font-size: 28px;
   }
   .section-6 .svg-ipad {
     width: 500px;
@@ -1130,6 +1202,9 @@ footer > div li {
     position: relative;
     top: 50px;
     left: 10px;
+  }
+  .section-7 .title-7-text h2 {
+    font-size: 28px;
   }
   .section-7 .svg-ipad {
     width: 553px;
@@ -1332,7 +1407,12 @@ footer > div li {
     left: 1%;
   }
   .section-cards div {
-    width: 21%;
+    width: 270px;
+    margin: 40px;
+    height: 331px;
+  }
+  .section-cards div p {
+    letter-spacing: 0.09px;
   }
 }
 
