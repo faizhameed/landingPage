@@ -192,7 +192,7 @@ p {
 }
 
 h2 {
-  line-height: 1.8em;
+  line-height: 1.2em;
 }
 
 .corefactors-logo {
@@ -1489,16 +1489,16 @@ p {
     padding-bottom: 0px;
   }
   .section-2-text-image .section-2-text {
-    width: 480px;
+    width: 621px;
   }
   .section-3 {
     height: 550px;
     padding-bottom: 0px;
   }
   .section-3 .title-3-text {
-    width: 480px;
+    width: 644px;
     position: relative;
-    right: 13%;
+    right: 8%;
     top: 10px;
   }
   .section-3 .svg-ipad {
@@ -1516,8 +1516,9 @@ p {
                         } */
   }
   .section-4 .title-4-text {
-    width: 480px;
+    width: 629px;
     position: relative;
+    left: 43px;
     top: 0px;
   }
   .btn-cta-container-1 {
@@ -1528,9 +1529,9 @@ p {
     top: 64px;
   }
   .section-5 .title-5-text {
-    width: 480px;
+    width: 573px;
     position: relative;
-    right: 4%;
+    right: 5%;
     top: 75px;
   }
   .section-5 .svg-ipad {
@@ -1540,7 +1541,8 @@ p {
     padding: 10px 0 0 0;
   }
   .section-6 .title-6-text {
-    left: 6%;
+    width: 596px;
+    left: 30px;
     top: 30px;
     position: relative;
   }
@@ -1551,6 +1553,9 @@ p {
   }
   .section-7 .title-7-text {
     position: relative;
+    width: 600px;
+    right: 46px;
+    left: auto;
   }
   .section-7 .svg-ipad {
     left: 1%;
