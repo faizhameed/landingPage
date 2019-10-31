@@ -356,7 +356,7 @@ p{
   margin: 0 auto;
   width: 100%;
   background-image: linear-gradient(to bottom, #006cff, #0b54b7);
-  p{
+  h3{
     margin: auto 0;
     padding-right: 20px;
     font-family: 'Lato', sans-serif;
@@ -443,7 +443,7 @@ p{
   margin: 0 auto;
   width: 100%;
   background-image: linear-gradient(to bottom, #ffe18c, #eabc39);
-  p{
+  h3{
     margin: auto 0;
     padding-right: 20px;
     font-family: 'Lato', sans-serif;
@@ -557,7 +557,7 @@ p{
   background-color:#003783;
   top: -10px;
     
-    p{
+    h3{
       margin: auto 0;
       padding-right: 20px;
       font-family: 'Lato', sans-serif;
@@ -823,7 +823,8 @@ p{
     }
     .btn-cta-container-1,.btn-cta-container-2{
       flex-direction: row;
-      p{
+      height: 65px;
+      h3{
         margin: auto 0 auto auto;
       }
       .cta-btn{
@@ -887,7 +888,7 @@ p{
       top: 964px;
       height: 80px;
       width:85%;
-      & p{
+      & h3{
         margin: auto 0 auto auto;
       }
       & .cta-btn{
@@ -1046,7 +1047,7 @@ p{
                 }
 
                 .btn-cta-container-1, .btn-cta-container-2{
-                  p{
+                  h3{
                     font-size: 20px;
                   }
                 }
@@ -1180,7 +1181,7 @@ p{
                   }
                   .btn-cta-container-3{
                     top: 965px;
-                    p{
+                    h3{
                       font-size: 20px;
                     }
                   }
@@ -1573,4 +1574,7 @@ p{
 // testing accordion
 .section-cards{
   display: none;
+}
+.dn{
+display: none;
 }
